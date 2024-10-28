@@ -1,0 +1,21 @@
+
+a[title] {
+  position: relative;
+}
+
+.dt-button {
+    background-color: transparent !important;  /* Remove the fill */
+    border-color: #0d6efd !important;  /* Set the primary color border */
+    color: #0d6efd !important;  /* Set the primary text color */
+}
+
+    /* On hover */
+.dt-button:hover {
+    background-color: #0d6efd !important;  /* Set the primary background color */
+    color: #fff !important;  /* Set the text color to white on hover */
+}
+
+.dataTables_wrapper td {
+    word-break: break-word;
+    hyphens: auto;
+}
