@@ -149,9 +149,9 @@
       <hr>
       <footer>
         <div class="container" style="text-align: left;  justify-content: left; align-items: left;float:left;"align="left">
-                <a href="https://intbio.org/"><img  src="/images/intbio.jpg" height="5%" ></a>
-                <a href="http://www.bio.msu.ru/"><img src="/images/logo_biofak.png" height="4%" ></a>
-                <a href="https://www.msu.ru/en/"><img src="/images/logo-mgu.png" height="4%" ></a>
+                <a href="https://intbio.org/"><img  src="images/intbio.jpg" height="5%" ></a>
+                <a href="http://www.bio.msu.ru/"><img src="images/logo_biofak.png" height="4%" ></a>
+                <a href="https://www.msu.ru/en/"><img src="images/logo-mgu.png" height="4%" ></a>
             <a href="https://intbio.org/">Integrative Biology Group</a>
         </div>
       </footer>
@@ -472,7 +472,7 @@
     window.addEventListener('load', function () {
         
         // document.querySelector("#landing").addEventListener('load', function () {
-            console.log('landing');
+            // console.log('landing');
             get_checkboxes('landing').forEach(function(obj){
                 
 //                 make it cklickable
@@ -498,13 +498,13 @@
         
         
         document.querySelector("#fig1").addEventListener('load', function () {
-            console.log('fig1');
+            // console.log('fig1');
             get_checkboxes("fig1").forEach(function(obj){
                obj.onclick = select_check;
              });
         });
         document.querySelector("#fig2").addEventListener('load', function () {
-            console.log('fig2');
+            // console.log('fig2');
             get_checkboxes('fig2').forEach(function(obj){
 //                 make it cklickable
                obj.setAttribute("pointer-events","visible") 
@@ -795,7 +795,7 @@
           if (children_str){
               children_str.split(',').forEach(function(id){
                   if (id!=''){
-                      console.log(id);
+                      // console.log(id);
                       var child_node = document.querySelector("#"+fig_id).contentDocument.querySelector('#'+id.trim())
                       child_node.style.fill = color
                       if (fig_id!='fig1'){
