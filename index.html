@@ -471,6 +471,11 @@
       
     window.addEventListener('load', function () {
         
+        
+        
+
+
+        
         // document.querySelector("#landing").addEventListener('load', function () {
             // console.log('landing');
             get_checkboxes('landing').forEach(function(obj){
@@ -597,6 +602,28 @@
             document.querySelector("#table_container").style.display = "none";
             document.querySelector("#select_controls").style.display = "none";
         })
+        
+        if(window.location.hash == '#localization' ) { 
+             var someVarName = document.querySelector('#fig1-tab'); // theTabID of the tab you want to open
+             var tab = new bootstrap.Tab(someVarName);
+             tab.show();
+            } else if (window.location.hash == '#clasification'){
+             var someVarName = document.querySelector('#fig2-tab'); // theTabID of the tab you want to open
+             var tab = new bootstrap.Tab(someVarName);
+             tab.show(); 
+            } else if (window.location.hash == '#domain_composition'){
+             var someVarName = document.querySelector('#SHvsPFAM-tab'); // theTabID of the tab you want to open
+             var tab = new bootstrap.Tab(someVarName);
+             tab.show(); 
+            } else if (window.location.hash == '#download'){
+             var someVarName = document.querySelector('#download-tab'); // theTabID of the tab you want to open
+             var tab = new bootstrap.Tab(someVarName);
+             tab.show(); 
+            } else if (window.location.hash == '#domain_co-occurrence '){
+             var someVarName = document.querySelector('#PFAMvsPFAM-tab'); // theTabID of the tab you want to open
+             var tab = new bootstrap.Tab(someVarName);
+             tab.show(); 
+            }
 
         
        
@@ -875,6 +902,8 @@
           })
           // <tspan sodipodi:role="line" id="tspan3602-9" x="252.36368" y="244.62035" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:Arial;-inkscape-font-specification:Arial">4162</tspan>
           }
+      
+      
       
 
  </script>    
