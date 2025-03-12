@@ -19,3 +19,11 @@ a[title] {
     word-break: break-word;
     hyphens: auto;
 }
+
+.scrollable-cell {
+    max-height: 200px; /* Set the fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: add border for visibility */
+    padding: 5px;
+    background: #f9f9f9;
+}

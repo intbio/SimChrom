@@ -317,7 +317,10 @@
             { title: "tag2", data: "tag2",visible: false },
             { title: "Abundance, ppm", data: "Abundance, ppm",visible: true },
             { title: "tag_simchrom-sl", data: "tag_simchrom-sl",visible: false },
-            { title: "PFAM", data: "Protein domains and families (by PFAM)",visible: true }
+            { title: "PFAM", data: "Protein domains and families (by PFAM)",visible: true },
+            { title: "Protein length", data: "Protein length",visible: true },
+            { title: "Protein complexes", data: "Protein complexes",visible: true }           
+           
         ],
         
         
@@ -450,6 +453,39 @@
                 
             }
         },    
+            
+                {
+            targets: 19,
+            render: function (data, type, row, meta)
+            {
+                if (type === 'display')
+                    
+                {
+                    var result = '<div class="scrollable-cell">';
+                    if (data!=null){
+                    data.split(';').forEach(function(d)
+                    {
+
+                        var first_bracket = d.indexOf('\(');
+                        var cpx_loc = d.indexOf('CPX');
+                        var eco_loc = d.indexOf('ECO');
+                        var name = d.substring(0,cpx_loc-1);
+                        var popup = d.substring(eco_loc,d.length-1);
+                        var for_link = d.substring(cpx_loc,eco_loc-1);
+                        
+
+                        result = result + '<a target="_blank" href="https://www.ebi.ac.uk/complexportal/complex/' + for_link + '/"title="'+popup+'">'+ name +'</a>,<br>';
+
+                    })
+                    }
+                    return result.substring(0, result.length - 5) + '</div>';
+                } else {
+                    return data;
+                }
+                
+                
+            }
+        },    
 
         ],
           
@@ -507,6 +543,8 @@
             get_checkboxes("fig1").forEach(function(obj){
                obj.onclick = select_check;
              });
+
+         
         });
         document.querySelector("#fig2").addEventListener('load', function () {
             // console.log('fig2');
@@ -576,16 +614,25 @@
         document.querySelector('#myTab #fig1-tab').addEventListener('shown.bs.tab', function (event) {
             document.querySelector("#table_container").style.display = "block";
             document.querySelector("#select_controls").style.display = "block";
+            reset_fig('fig1',false)
+            table.columns().search('').draw()
+            // Drop filter
         })
         
         document.querySelector('#myTab #fig2-tab').addEventListener('shown.bs.tab', function (event) {
             document.querySelector("#table_container").style.display = "block";
             document.querySelector("#select_controls").style.display = "block";
+            reset_fig('fig2',false)
+            table.columns().search('');
+            table.column(16).search('.+', true, false).draw(); //16 simchromsl
+            // Filer here
         })
         
         document.querySelector('#myTab #SHvsPFAM-tab').addEventListener('shown.bs.tab', function (event) {
             document.querySelector("#table_container").style.display = "block";
             document.querySelector("#select_controls").style.display = "none";
+            table.columns().search('');
+            table.columns([16, 17]).search('.+', true, false).draw();
         })
         
         document.querySelector('#myTab #PFAMvsPFAM-tab').addEventListener('shown.bs.tab', function (event) {
@@ -607,7 +654,7 @@
              var someVarName = document.querySelector('#fig1-tab'); // theTabID of the tab you want to open
              var tab = new bootstrap.Tab(someVarName);
              tab.show();
-            } else if (window.location.hash == '#clasification'){
+            } else if (window.location.hash == '#classification'){
              var someVarName = document.querySelector('#fig2-tab'); // theTabID of the tab you want to open
              var tab = new bootstrap.Tab(someVarName);
              tab.show(); 
@@ -619,7 +666,7 @@
              var someVarName = document.querySelector('#download-tab'); // theTabID of the tab you want to open
              var tab = new bootstrap.Tab(someVarName);
              tab.show(); 
-            } else if (window.location.hash == '#domain_co-occurrence '){
+            } else if (window.location.hash == '#domain_co-occurrence'){
              var someVarName = document.querySelector('#PFAMvsPFAM-tab'); // theTabID of the tab you want to open
              var tab = new bootstrap.Tab(someVarName);
              tab.show(); 
@@ -739,6 +786,7 @@
           }
       }
       
+      
      function reset_fig(fig_id,apply){
 
          var svgContent = document.querySelector("#"+fig_id).contentDocument
@@ -752,9 +800,10 @@
                
              });
          };
-         if (apply) {table.columns().search('').draw()};         
-         // setTimeout(function(){e.target.style.fill = "white"}, 300);
+         if (apply) {table.columns().search('').draw()};     
 
+         // setTimeout(function(){e.target.style.fill = "white"}, 300);
+         
      }
       
      function reset_all(){
