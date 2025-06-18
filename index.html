@@ -97,7 +97,7 @@
         
       <div class="tab-pane  " id="SHvsPFAMTab" role="tabpanel" aria-labelledby="SHvsPFAMTab-tab">
               <div class="d-flex r ">
-               <b>SimChrome-SL vs Protein domains and families by Pfam</b>
+               <b>SimChrom-SL vs Protein domains and families by Pfam</b>
                                     
               </div>
 <!--SH VS PFAM ################################################################################# -->
@@ -741,8 +741,11 @@
             var point = data.points[0];
             var pfam_tag = SHvsPfam_plot.layout.xaxis.ticktext[point.x];
             var SH_tag = SHvsPfam_plot.layout.yaxis.ticktext[point.y];
-
-            filter_table_by_plot(SH_tag,pfam_tag);
+            var active_button_text = document.querySelectorAll('#SHvsPfam_plot .updatemenu-item-text')[0].textContent;
+            
+            var SH_SL = true ? active_button_text.includes('SL') : false;
+            console.log(SH_SL);
+            filter_table_by_plot(SH_tag,pfam_tag,SH_SL);
         });
         
         var PfamvsPfam_plot = document.getElementById('PfamvsPfam_plot');
@@ -898,7 +901,7 @@
           return result
       }
       
-      function filter_table_by_plot(SH_tag,pfam_tag){
+      function filter_table_by_plot(SH_tag,pfam_tag,SH_SL){
           reset_all();
           function check_pfam(data,pfam_tag){
               var result = data.split(';').some( function (s) {
@@ -906,11 +909,19 @@
               });
               return result;
           }
+          function check_SH(data,SH_tag){
+              var result = data.split(',').some( function (s) {
+                  return s.trim() == SH_tag;
+              });
+              return result;
+          }
           table.column(17).search( (d) => check_pfam(d,pfam_tag) );
           if (SH_tag=='SimChrom') {
               table.column(10).search( (d) =>  $.trim(d) !== '');
-          } else {
+          } else if (SH_SL) {
               table.column(10).search( (d) =>   $.trim(d) === SH_tag);
+          } else {
+              table.column(9).search( (d) => check_SH(d,SH_tag) );
           }
           table.draw();
       }
