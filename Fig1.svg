@@ -169,8 +169,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.77721353"
-     inkscape:cx="578.34814"
-     inkscape:cy="342.89161"
+     inkscape:cx="80.415481"
+     inkscape:cy="440.67684"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="-9"
@@ -4728,7 +4728,7 @@
      height="14.440311"
      x="9.839242"
      y="169.80219"
-     children="uniprot_nucleus_b,uniprot_nucleolus,uniprot_nucleolus_fibrillar_center,uniprot_nucleus_envelope,uniprot_nucleus_envelope_b,uniprot_nucleus_membrane,uniprot_nucleus_pore_complex,uniprot_nucleus_inner_membrane,uniprot_nucleus_outer_membrane,uniprot_nucleus_lamina,uniprot_nucleus_intermembrane_space,uniprot_nucleoplasm,uniprot_nucleus_matrix,uniprot_nuclear_body,uniprot_nuclear_body_b,uniprot_nucleus_speckle,uniprot_pml_body,uniprot_cajal_body,uniprot_gem" />
+     children="uniprot_nucleus_b,uniprot_nucleolus,uniprot_nucleolus_fibrillar_center,uniprot_nucleus_envelope,uniprot_nucleus_envelope_b,uniprot_nucleus_membrane,uniprot_nuclear_pore_complex,uniprot_nucleus_inner_membrane,uniprot_nucleus_outer_membrane,uniprot_nucleus_lamina,uniprot_nucleus_intermembrane_space,uniprot_nucleoplasm,uniprot_nucleus_matrix,uniprot_nuclear_body,uniprot_nuclear_body_b,uniprot_nucleus_speckle,uniprot_pml_body,uniprot_cajal_body,uniprot_gem" />
   <rect
      style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
      id="uniprot_nucleus_b"
@@ -5092,6 +5092,7 @@
      y="78.745346" />
   <script
      id="script1"><!-- document.getElementByClassName('svgcheckbox').onclick = changeColor; -->
+
 
 
 
