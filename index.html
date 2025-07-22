@@ -51,7 +51,7 @@
     <div id='select_controls' style="display:none" class=" rounded"> 
         <li class="border-secondary border-bottom border-top d-flex px-1 py-1">
             <button type="button" id='reset_btn' class="btn btn-outline-secondary btn-sm " onclick='reset_all()'>Reset filters</button>
-        <div class="ms-3">Boolean logic mode</div>
+        <div class="ms-3">Mode</div>
         <div class="border-start mx-2"></div>
         <div class="form-text text-1">Union</div>
         <div class="form-check form-switch ms-3">            
@@ -79,13 +79,13 @@
       </div>  
         
       <div class="tab-pane  " id="LocalizationTab" role="tabpanel" aria-labelledby="fig1-tab">
-          <div> <b>Interactive Figure 2</b>
+          <div> <b>Interactive Figure 1</b>
           </div>
           <object id="fig1" data="Fig1.svg" height="600px"></object>
       </div>
       <div class="tab-pane  " id="SimChromTab" role="tabpanel" aria-labelledby="fig2-tab">
               <div class="d-flex r ">
-               <b>Interactive Figure 3</b>
+               <b>Interactive Figure 2</b>
                 <div class="border-start mx-2"></div>
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="sim_chrome_sl_switch">
@@ -181,7 +181,7 @@ The number of proteins with the corresponding domain pair is given for all SimCh
       
       let sel_cols_toolbar = document.createElement('div');
       sel_cols_toolbar.innerHTML = `<div class="d-flex align-items-center">
-            <a title='Otherwise show only with evidence score'>Show all localization tags</a>:
+            <a title='Otherwise show only with evidence score'>Tags with low confidence</a>:
             <div class="border-start mx-2"></div>
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" role="switch" id="unirot_filter_vis_switch">
@@ -577,7 +577,7 @@ The number of proteins with the corresponding domain pair is given for all SimCh
             {
                 if (type === 'display')
                 {
-                        console.log(row)
+                        // console.log(row)
                         data = "<a target='_blank' href='https://www.ebi.ac.uk/interpro/protein/reviewed/"+row['Entry']+"'>"+data+"</a>";
 
                 }
@@ -590,7 +590,7 @@ The number of proteins with the corresponding domain pair is given for all SimCh
             {
                 if (type === 'display')
                 {
-                        console.log(row)
+                        // console.log(row)
                         data = "<a target='_blank' href=' https://ted.cathdb.info/uniprot/"+row['Entry']+"'>"+data+"</a>";
 
                 }
@@ -747,7 +747,7 @@ The number of proteins with the corresponding domain pair is given for all SimCh
             var active_button_text = document.querySelectorAll('#SHvsPfam_plot .updatemenu-item-text')[0].textContent;
             
             var SH_SL = true ? active_button_text.includes('SL') : false;
-            console.log(SH_SL);
+            // console.log(SH_SL);
             filter_table_by_plot(SH_tag,pfam_tag,SH_SL);
         });
         
