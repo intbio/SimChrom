@@ -51,7 +51,7 @@
     <div id='select_controls' style="display:none" class=" rounded"> 
         <li class="border-secondary border-bottom border-top d-flex px-1 py-1">
             <button type="button" id='reset_btn' class="btn btn-outline-secondary btn-sm " onclick='reset_all()'>Reset filters</button>
-        <div class="ms-3">Boolean logic mode</div>
+        <div class="ms-3">Mode</div>
         <div class="border-start mx-2"></div>
         <div class="form-text text-1">Union</div>
         <div class="form-check form-switch ms-3">            
@@ -66,39 +66,33 @@
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane    show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div style="max-width:1100px">
-              <br>Supplementary material to
-              <br><br>
-              <b>"(Re)defining the human chromatome:
-              <br>
-              an integrated meta-analysis of localization, function, abundance, physical properties and domain composition of chromatin proteins"</b> 
-              <br><br> 
-              <i>(by A.K. Gribkova, G.A. Armeev, M.P. Kirpichnikov, A.K. Shaytan)</i>
+              Supplementary material to "Meta-analysis of human nuclear proteome and chromatome datasets: understanding chromatin functioning through protein abundance, sequence and domain composition" (by A.K. Gribkova, G.A. Armeev, A.K. Shaytan).
               <br> <br> 
-              The resource provides interactive tools to analyze human nuclear and chromatin proteins with respect to their subnuclear localization (from UniProt, HPA, OpenCell), chromatin category according to the developed simplified chromatin protein classification SimChrom, protein abundance (by PaxDB) and domain architecture (by PFAM). You can also download preprocessed MS-based chromatome datasets and nuclear/non-nuclear localization reference protein sets.
+              The resource provides interactive tools to analyze human nuclear and chromatin proteins with respect to their subnuclear localization (from UniProt, HPA, OpenCell), chromatin category according to the developed simplified chromatin protein classification SimChrom, protein abunfance (by PaxDB) and domain architecture (by PFAM). You can also download preprocessed MS-based chromatome datasets and nuclear/non-nuclear localisation reference protein sets.
               <br> <br> 
-              <b>Interactive Figure 1</b>
+              Interactive Figure 1
               <br> <br> 
               <div class="d-flex justify-content-center">
-                  <object id="landing" data="Fig1_landing.svg" height="600px"></object>
+                  <object id="landing" data="Interactive_Figure_1.svg" height="600px"></object>
               </div>
           </div>        
       </div>  
         
       <div class="tab-pane  " id="LocalizationTab" role="tabpanel" aria-labelledby="fig1-tab">
-          <div> <b>Interactive Figure 2.</b> Comparative analysis of protein localization ontologies and their content between UniProt, the Human Protein Atlas (HPA) and Opencell.
+          <div> <b>Interactive Figure 1</b>
           </div>
-          <object id="fig1" data="Fig1.svg" height="600px"></object>
+          <object id="fig1" data="Interactive_Figure_2.svg" height="600px"></object>
       </div>
       <div class="tab-pane  " id="SimChromTab" role="tabpanel" aria-labelledby="fig2-tab">
               <div class="d-flex r ">
-               <b>Interactive Figure 3</b>
+               <b>Interactive Figure 2</b>
                 <div class="border-start mx-2"></div>
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="sim_chrome_sl_switch">
                     <label class="form-check-label" for="sim_chrome_sl_switch">single label classification of SimChrom (SimChrom-SL)</label>
                 </div>
               </div>
-          <object id="fig2" data="Fig2.svg" height="600px"></object>
+          <object id="fig2" data="Interactive_Figure_3.svg" height="600px"></object>
       </div>
         
       <div class="tab-pane  " id="SHvsPFAMTab" role="tabpanel" aria-labelledby="SHvsPFAMTab-tab">
@@ -145,14 +139,18 @@ The number of proteins with the corresponding domain pair is given for all SimCh
       <div class="tab-pane  " id="download" role="tabpanel" aria-labelledby="download-tab">
           <div style="max-width:1100px">
             <b>Table 1. Constructed reference datasets of nuclear and non-nuclear proteins at different levels of confidence and uniqueness of localization in the nucleus or multi localization in the nucleus and other cellular compartments.</b>
-              <table id='download_table1' class="table table-striped"><thead><tr><th>Download</th><th>Definition</th><th>Number of proteins</th></tr></thead><tbody><tr><td>NULOC_CS</td><td>entries annotated as nuclear in both databases: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved), excludes proteins labeled only as non-nuclear in the OpenCell database (annotation grade 2 or 3)</td><td>3244</td></tr><tr><td>NULOC_CS_UL</td><td>entries annotated only as nuclear in both databases: UniProt (provided evidence code is available) AND HPA (with reliability score: Enhanced, Supported, Approved), excludes proteins labeled only as non-nuclear in the OpenCell database (annotation grade 2 or 3)</td><td>1263</td></tr><tr><td>NULOC_CS_UL_NECF</td><td>entries annotated only as nuclear in both databases: UniProt AND HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>1310</td></tr>
-              <tr><td>NULOC_JT_UL</td><td>entries annotated only as nuclear in in at least one database: UniProt (provided evidence code is available) OR HPA (with reliability score: Enhanced, Supported, Approved) OR OpenCell database (annotation grade 2 or 3)</td><td>4256</td></tr><tr><td>NULOC_JT_UL_NECF</td><td>entries annotated only as nuclear in in at least one database: UniProt OR HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>4280</td></tr><tr><td>NULOC_CS_NECF</td><td>entries annotated as nuclear in both databases: UniProt AND HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>3962</td></tr><tr><td>NULOC_JT</td><td>entries annotated as nuclear in at least one database: UniProt (provided evidence code is available), HPA (with evidence tags: Enhanced, Supported, Approved), OpenCell (annotation grade 2 or 3)</td><td>8038</td></tr>
-              <tr><td>NULOC_JT_NECF</td><td>entries annotated as nuclear in at least one database: UniProt, HPA, OpenCell</td><td>8914</td></tr><tr><td>NON_NULOC_CS</td><td>proteins whose localization annotations exclude nuclear localization in both databases: UniProt (provided evidence code is available) and HPA (with evidence tags: Enhanced, Supported, Approved)</td><td>6056</td></tr><tr><td>CYTLOC_CS_UL</td><td>entries annotated only as cytoplasmic (see Methods) in both databases: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved)</td><td>2026</td></tr></tbody></table>
+              <table id='download_table1' class="table table-striped"><thead><tr><th>Dataset name (download protein list)</th><th>Definition of dataset</th><th>Number of proteins</th></tr></thead><tbody><tr><td>NULOC_CS</td><td>entries annotated as nuclear in both databases: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved), excludes proteins labeled only as non-nuclear in the OpenCell database (annotation grade 2 or 3)</td><td>3296</td></tr><tr><td>NULOC_CS_NECF</td><td>entries annotated as nuclear in both databases: UniProt AND HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>3988</td></tr><tr><td>NULOC_CS_UL</td><td>entries annotated only as nuclear in both databases: UniProt (provided evidence code is available) AND HPA (with reliability score: Enhanced, Supported, Approved), excludes proteins labeled only as non-nuclear in the OpenCell database (annotation grade 2 or 3)</td><td>1322</td></tr>
+                <tr><td>NULOC_CS_UL_NECF</td><td>entries annotated only as nuclear in both databases: UniProt AND HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>1322</td></tr><tr><td>NULOC_JT</td><td>entries annotated as nuclear in at least one database: UniProt (provided evidence code is available), HPA (with evidence tags: Enhanced, Supported, Approved), OpenCell (annotation grade 2 or 3)</td><td>8048</td></tr><tr><td>NULOC_JT_NECF</td><td>entries annotated as nuclear in at least one database: UniProt, HPA, OpenCell</td><td>8912</td></tr><tr><td>NULOC_JT_UL</td><td>entries annotated only as nuclear in in at least one database: UniProt (provided evidence code is available) OR HPA (with reliability score: Enhanced, Supported, Approved) OR OpenCell database (annotation grade 2 or 3)</td><td>4292</td></tr>
+                <tr><td>NULOC_JT_UL_NECF</td><td>entries annotated only as nuclear in in at least one database: UniProt OR HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>4292</td></tr><tr><td>NON_NULOC_CS</td><td>proteins whose localization annotations exclude nuclear localization in both databases: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved)</td><td>3674</td></tr><tr><td>NON_NULOC_JT</td><td>proteins whose localization annotations exclude nuclear localization at least one databases: UniProt (provided evidence code is available) OR HPA (with evidence tags: Enhanced, Supported, Approved) OR OpenCell (annotation grade 2 or 3)</td><td>11479</td></tr><tr><td>CYTLOC_CS_UL</td><td>proteins with only aggregate cytoplasm annotation in both database: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved)</td><td>2026</td></tr></tbody></table>
             <b>Table 2. Representative list of nuclear and chromatome datasets from MS-based experimental studies.	</b>  
-              <table id='download_table2' class="table table-striped"><thead><tr><th>Year</th><th>Type of cells</th><th>Number of chromatin proteins (processed)</th><th>Methods, Notes</th><th>Reference</th><th>Download </th></tr></thead><tbody><tr><td>2011</td><td>HeLa S3</td><td>1501</td><td>Three different chromatin purification methods: total chromatin extraction, salt extraction and total MNase digestion. </td><td>Torrente et al. 2011</td><td>torrente_2011</td></tr><tr><td>2014</td><td>HeLa S3</td><td>3509</td><td>Nascent chromatin capture (NCC) to profile chromatin proteome dynamics during replication in human cells. NCC relies on biotin–dUTP labelling of replicating DNA, affinity purification and quantitative proteomics.</td><td>Alabert et al., 2014</td><td>alabert_2014</td></tr>
-              <tr><td>2014</td><td>HepG2, HeLa, MCF-7</td><td>1941</td><td>ML-based classification based on Chromatin Enrichment for Proteomics (CheP) experiments (crosslinking + differential extraction under denaturing condition) in different conditions </td><td>Kustatscher et al. 2014</td><td>kustatscher_2014</td></tr><tr><td>2016</td><td>HeLa</td><td>1001</td><td>Crude nuclear extraction, identified "mostly nuclear" fraction by global intensity distribution</td><td>Itzhak et al., 2016</td><td>itzhak_2016</td></tr><tr><td>2018</td><td>T98G cell line (from glioblastoma multiforme)</td><td>3056</td><td>DEMAC method of chromatin extraction (with CsCl fractionation)</td><td>Ginno et al. 2018</td><td>ginno_2018</td></tr><tr><td>2021</td><td>K562 cell line</td><td>2848</td><td>BL-Hi-C method of chromatin extraction</td><td>Shi et al. 2021</td><td>shi_2021</td></tr>
-              <tr><td>2023</td><td>ESCs H9</td><td>1667</td><td>chromatin purification strategy: Chromatin Aggregation Capture (ChAC), with Data-Independent Acquisition (DIA) MS-based proteomics</td><td>Ugur et al., 2023</td><td>ugur_2023</td></tr></tbody></table>
-          </div>        
+              <table id='download_table2' class="table table-striped"><thead><tr><th>Reference</th><th>Chromatin state specificity</th><th>Chromatin purification methods (short) and additional computation filtration</th><th>Type of cells</th><th>Proteins identified (by authors)</th><th>Processed number of proteins</th><th>Download protein list</th></tr></thead><tbody><tr><td>Torrente et al., 2011</td><td>Total chromatin, euchromatin, heterochromatin</td><td>(1) Total chromatin extraction with hypotonic lysis, Triton X-100 permeabilization, low-speed centrifugation, and EDTA-mediated nuclear lysis. (2) Salt extraction using high salt buffer (420 mM KCl), sonication, centrifugation, followed by dialysis. (3) Micrococcal nuclease (MNase) digestion, including total digestion and partial digestion to separate euchromatin and heterochromatin fractions.</td><td>HeLa S3</td><td>1038 (total chromatin extraction), 1388 (salt), 949 (MNase); 751 (partial MNase); 1912 (all identified chromatin proteins)</td><td>1501</td><td>torrente_2011</td></tr>
+                <tr><td>Kustatscher et al., 2014</td><td>Total interphase chromatin</td><td>Chromatin Enrichment for Proteomics (ChEP): in vivo crosslinking with 1% formaldehyde, followed by differential extraction under denaturing conditions (SDS, urea), RNase A treatment, centrifugation-based chromatin pelleting, and sonication. To assess chromatin association, the study applied Multiclassifier Combinatorial Proteomics (MCCP), which integrates SILAC-based quantitative proteomics from 35 biochemical and biological perturbation experiments. A random forest machine learning algorithm was trained on curated chromatin and non-chromatin reference proteins to assign each detected protein an interphase chromatin probability score (ICP).</td><td>HeLa, MCF-7, HepG2, HEK293, U2OS, DT40</td><td>1980 (chromatin proteins with ICP&gt;0.5); 7635 (total chromatin proteins with ICP values)</td><td>1956</td><td>kustatscher_2014 </td></tr>
+                <tr><td>Alabert et al., 2014</td><td>Nascent vs. mature chromatin</td><td>Nascent Chromatin Capture (NCC): biochemical isolation of newly replicated chromatin using biotin–dUTP incorporation. Cells were pulse-labelled with biotin–dUTP during DNA replication and fixed after either 20 min (nascent chromatin) or 2 h (mature chromatin). Chromatin was crosslinked with 2% formaldehyde, nuclei were isolated, and chromatin was sheared to 2–3 kb by sonication. Biotin-labelled DNA–protein complexes were isolated using streptavidin beads. For proteomic analysis, nascent and mature chromatin were metabolically labeled by SILAC and processed together.</td><td>HeLa S3</td><td>426 (nascent-enriched); 3995 (all identified chromatin proteins)</td><td>3861</td><td>alabert_2014</td></tr>
+                <tr><td>Itzhak et al., 2016</td><td>Nuclear proteome</td><td>Cells were metabolically labeled with SILAC and gently lysed under hypo-osmotic conditions to preserve organelle integrity. Post-nuclear supernatants were fractionated by differential centrifugation into five sub-organellar fractions plus cytosolic and nuclear pellets. Protein abundance profiles across SILAC fractions were processed by PCA and classified using a supervised SVM algorithm trained on curated organelle markers. In parallel, total intensities in the nuclear, cytosolic, and organellar fractions (from label-free MS) were used to assign each protein to global classes such as "mostly nuclear", based on relative signal distribution.</td><td>HeLa</td><td>1133 (nuclear); 672 (nucleo-cytosolic); 8710 (total proteome)</td><td>1092</td><td>itzhak_2016</td></tr>
+                <tr><td>Ginno et al., 2018</td><td>Total chromatin: time-resolved (G1, S, M)</td><td>Density-based enrichment for mass spectrometry analysis of chromatin (DEMAC): formaldehyde-fixed cells were sonicated, subjected to cesium chloride (CsCl) gradient ultracentrifugation to isolate DNA–protein complexes by buoyant density (1.39 g/cm³). Chromatin fractions were collected, dialyzed, decrosslinked, digested with DNase I.</td><td>Human T98G (glioblastoma)</td><td>3065 (chromatome); 6242 (total proteome)</td><td>3051</td><td>ginno_2018</td></tr>
+                <tr><td>Shi et al., 2021</td><td>Promoter-proximal chromatin</td><td>Hi-MS (Hi-C-based proteomics, adapted from BL-Hi-C): cells crosslinked with 1% formaldehyde; genomic DNA digested with HaeIII (GGCC sites); ligated with biotinylated bridge linkers; nuclei lysed in 0.2% SDS; chromatin sonicated; chromatin-DNA complexes captured on streptavidin beads. Quantified sensitivity to 1,6-hexanediol evaluated via AICAP index (Anti-1,6-Hexanediol Index of Chromatin-Associated Proteins).</td><td>K562</td><td>3228</td><td>2848</td><td>shi_2021</td></tr><tr><td>Ugur et al., 2023</td><td>Total chromatin</td><td>Chromatin Aggregation Capture (ChAC): nuclei fixed with 1% formaldehyde, lysed with SDS and urea, sonicated, and purified by protein aggregation capture (PAC) on magnetic beads. DIA-MS with DIA-NN used for quantification.</td><td>Human ESCs (H9)</td><td>2487</td><td>1730</td><td>ugur_2023</td></tr>
+                <tr><td>Alvarez et al., 2023</td><td>Time-resolved (nascent, G2/M, early and late G1)</td><td>Nascent Chromatin Capture (NCC) method, which relies on pulse-labeling newly replicated DNA with biotin-dUTP, followed by formaldehyde crosslinking and sonication-based chromatin fragmentation. Biotinylated DNA-protein complexes were affinity-purified using streptavidin magnetic beads. HeLa S3 cells were synchronized and harvested at five post-replication time points (Nasc, Late S, G2/M, early G1, late G1) across six biological replicates.</td><td>HeLa S3</td><td>1454 (present at all time points in all 6 replicates; from total of 5770)</td><td>1478 (2894 total)</td><td>alvarez_2023</td></tr>
+                <tr><td>Alvarez et al., 2023</td><td>Time-resolved (nascent, G2/M, early and late G1)</td><td>isolation of Proteins On Nascent DNA (iPOND): formaldehyde crosslinking (1%), EdU labeling for 15 minutes, click chemistry with biotin-azide, chromatin fragmentation, streptavidin bead enrichment.</td><td>TIG-3 fibroblasts</td><td>2351 (detected in 4 to 5 of 5 replicates)</td><td>2397 (2894 total)</td><td>alvarez_2023</td></tr></tbody></table>          </div>        
       </div>
         
       <div class="tab-pane  " id="about" role="tabpanel" aria-labelledby="about-tab">
@@ -245,27 +243,28 @@ The number of proteins with the corresponding domain pair is given for all SimCh
                                             },
                                            columnDefs: [
                                             {                                           
-                                                targets: 4,
+                                                targets: 0,
                                                 render: function (data, type, row, meta)
                                                 {
                                                     if (type === 'display')
                                                     {
                                                         if (data!=null){
                                                             data = data.replaceAll('Ugur et al., 2023',"<a target='_blank' href='https://doi.org/10.1093/nar/gkad058'>Ugur et al., 2023</a>");
-                                                            data = data.replaceAll('Alvarez et al., 2023',"<a target='_blank' href='https://doi.org/10.1016/j.celrep.2023.111996'>Alvarez et al., 2023</a>");
-                                                            data = data.replaceAll('Shi et al. 2021',"<a target='_blank' href='https://doi.org/10.1186/s13059-021-02456-2'>Shi et al., 2021</a>");
-                                                            data = data.replaceAll('Ginno et al. 2018',"<a target='_blank' href='https://doi.org/10.1038/s41467-018-06007-5'>Ginno et al., 201</a>");
+                                                            data = data.replaceAll('Shi et al., 2021',"<a target='_blank' href='https://doi.org/10.1186/s13059-021-02456-2'>Shi et al., 2021</a>");
+                                                            data = data.replaceAll('Ginno et al., 2018',"<a target='_blank' href='https://doi.org/10.1038/s41467-018-06007-5'>Ginno et al., 201</a>");
                                                             data = data.replaceAll('Itzhak et al., 2016',"<a target='_blank' href='https://doi.org/10.7554/elife.16950'>Itzhak et al., 2016</a>");
-                                                            data = data.replaceAll('Kustatscher et al. 2014',"<a target='_blank' href='https://doi.org/10.1002%2Fembj.201387614'>Kustatscher et al., 201</a>");
+                                                            data = data.replaceAll('Kustatscher et al., 2014',"<a target='_blank' href='https://doi.org/10.1002%2Fembj.201387614'>Kustatscher et al., 201</a>");
                                                             data = data.replaceAll('Alabert et al., 2014',"<a target='_blank' href='https://doi.org/10.1038/ncb2918'>Alabert et al., 2014</a>");
-                                                            data = data.replaceAll('Torrente et al. 2011',"<a target='_blank' href='https://doi.org/10.1371/journal.pone.0024747'>Torrente et al., 2011</a>");
+                                                            data = data.replaceAll('Torrente et al., 2011',"<a target='_blank' href='https://doi.org/10.1371/journal.pone.0024747'>Torrente et al., 2011</a>");
+                                                            data = data.replaceAll('Alvarez et al., 2023',"<a target='_blank' href='https://doi.org/10.1016/j.celrep.2023.111996'>Alvarez et al., 2023</a>");
+                                                            
                                                         }
                                                     }
                                                     return data;
                                                 }
                                             },
                                            {
-                                                targets: 5,
+                                                targets: 6,
                                                 render: function (data, type, row, meta)
                                                 {
                                                     if (type === 'display')
@@ -434,7 +433,6 @@ The number of proteins with the corresponding domain pair is given for all SimCh
                 {
                     if (data!=null){
                         data = data.replaceAll('Ugur et al., 2023',"<a target='_blank' href='https://doi.org/10.1093/nar/gkad058'>Ugur et al., 2023</a>");
-                        data = data.replaceAll('Alvarez et al., 2023',"<a target='_blank' href='https://doi.org/10.1016/j.celrep.2023.111996'>Alvarez et al., 2023</a>");
                         data = data.replaceAll('Shi et al., 2021',"<a target='_blank' href='https://doi.org/10.1186/s13059-021-02456-2'>Shi et al., 2021</a>");
                         data = data.replaceAll('Ginno et al., 2018',"<a target='_blank' href='https://doi.org/10.1038/s41467-018-06007-5'>Ginno et al., 201</a>");
                         data = data.replaceAll('Itzhak et al., 2016',"<a target='_blank' href='https://doi.org/10.7554/elife.16950'>Itzhak et al., 2016</a>");
