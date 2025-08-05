@@ -51,7 +51,7 @@
     <div id='select_controls' style="display:none" class=" rounded"> 
         <li class="border-secondary border-bottom border-top d-flex px-1 py-1">
             <button type="button" id='reset_btn' class="btn btn-outline-secondary btn-sm " onclick='reset_all()'>Reset filters</button>
-        <div class="ms-3">Mode</div>
+        <div class="ms-3">Boolean logic mode</div>
         <div class="border-start mx-2"></div>
         <div class="form-text text-1">Union</div>
         <div class="form-check form-switch ms-3">            
@@ -66,11 +66,22 @@
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane    show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div style="max-width:1100px">
+              <br>Supplementary material to
+              <br><br>
+              <b>"(Re)defining the human chromatome:
+              <br>
+              an integrated meta-analysis of localization, function, abundance, physical properties and domain composition of chromatin proteins"</b> 
+              <br><br> 
+              <i>(by A.K. Gribkova, G.A. Armeev, M.P. Kirpichnikov, A.K. Shaytan)</i>
+              <br> <br> 
               Supplementary material to "Meta-analysis of human nuclear proteome and chromatome datasets: understanding chromatin functioning through protein abundance, sequence and domain composition" (by A.K. Gribkova, G.A. Armeev, A.K. Shaytan).
               <br> <br> 
-              The resource provides interactive tools to analyze human nuclear and chromatin proteins with respect to their subnuclear localization (from UniProt, HPA, OpenCell), chromatin category according to the developed simplified chromatin protein classification SimChrom, protein abunfance (by PaxDB) and domain architecture (by PFAM). You can also download preprocessed MS-based chromatome datasets and nuclear/non-nuclear localisation reference protein sets.
+              The resource provides interactive tools to analyze human nuclear and chromatin proteins with respect to their subnuclear 
+              localization (from UniProt, HPA, OpenCell), chromatin category according to the developed simplified chromatin protein 
+              classification SimChrom, protein abundance (by PaxDB) and domain architecture (by PFAM). You can also download 
+              preprocessed MS-based chromatome datasets and nuclear/non-nuclear localization reference protein sets.
               <br> <br> 
-              Interactive Figure 1
+              <b>Interactive Figure 1</b>
               <br> <br> 
               <div class="d-flex justify-content-center">
                   <object id="landing" data="Interactive_Figure_1.svg" height="600px"></object>
@@ -79,13 +90,14 @@
       </div>  
         
       <div class="tab-pane  " id="LocalizationTab" role="tabpanel" aria-labelledby="fig1-tab">
-          <div> <b>Interactive Figure 1</b>
+          <div> <b>Interactive Figure 2.</b>Comparative analysis of protein localization ontologies and their content 
+              between UniProt, the Human Protein Atlas (HPA) and Opencell.
           </div>
           <object id="fig1" data="Interactive_Figure_2.svg" height="600px"></object>
       </div>
       <div class="tab-pane  " id="SimChromTab" role="tabpanel" aria-labelledby="fig2-tab">
               <div class="d-flex r ">
-               <b>Interactive Figure 2</b>
+               <b>Interactive Figure 3.</b>
                 <div class="border-start mx-2"></div>
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="sim_chrome_sl_switch">
@@ -185,7 +197,7 @@ The number of proteins with the corresponding domain pair is given for all SimCh
       
       let sel_cols_toolbar = document.createElement('div');
       sel_cols_toolbar.innerHTML = `<div class="d-flex align-items-center">
-            <a title='Otherwise show only with evidence score'>Tags with low confidence</a>:
+            <a title='Otherwise show only localization tags with high confidence (see Methods)'> Show low confidence tags</a>:
             <div class="border-start mx-2"></div>
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" role="switch" id="unirot_filter_vis_switch">
