@@ -797,44 +797,51 @@ The number of proteins with the corresponding domain pair is given for all SimCh
         document.querySelector('#myTab #home-tab').addEventListener('shown.bs.tab', function (event) {
             document.querySelector("#table_container").style.display = "none";
             document.querySelector("#select_controls").style.display = "none";
+            window.location.hash = "";
         })
         
-        document.querySelector('#myTab #fig1-tab').addEventListener('shown.bs.tab', function (event) {
+        document.querySelector('#myTab #fig1-tab').addEventListener('shown.bs.tab', function (event) { //#localization
             document.querySelector("#table_container").style.display = "block";
             document.querySelector("#select_controls").style.display = "block";
-            reset_fig('fig1',false)
-            table.columns().search('').draw()
+            reset_fig('fig1',false);
+            table.columns().search('').draw();
+            window.location.hash = "#localization"
             // Drop filter
         })
         
-        document.querySelector('#myTab #fig2-tab').addEventListener('shown.bs.tab', function (event) {
+        document.querySelector('#myTab #fig2-tab').addEventListener('shown.bs.tab', function (event) { //#classification
             document.querySelector("#table_container").style.display = "block";
             document.querySelector("#select_controls").style.display = "block";
             reset_fig('fig2',false)
             table.columns().search('');
             table.column(16).search('.+', true, false).draw(); //16 simchromsl
+            window.location.hash = "#classification";
             // Filer here
         })
         
-        document.querySelector('#myTab #SHvsPFAM-tab').addEventListener('shown.bs.tab', function (event) {
+        document.querySelector('#myTab #SHvsPFAM-tab').addEventListener('shown.bs.tab', function (event) { //#domain_composition
             document.querySelector("#table_container").style.display = "block";
             document.querySelector("#select_controls").style.display = "none";
             table.columns().search('');
             table.columns([16, 17]).search('.+', true, false).draw();
+            window.location.hash = "#domain_composition";
         })
         
-        document.querySelector('#myTab #PFAMvsPFAM-tab').addEventListener('shown.bs.tab', function (event) {
+        document.querySelector('#myTab #PFAMvsPFAM-tab').addEventListener('shown.bs.tab', function (event) { //#domain_co-occurrence
             document.querySelector("#table_container").style.display = "block";
             document.querySelector("#select_controls").style.display = "none";
+            window.location.hash = "#domain_co-occurrence";
         })
-        document.querySelector('#myTab #NovelStructuralDomains-tab').addEventListener('shown.bs.tab', function (event) {
+        document.querySelector('#myTab #NovelStructuralDomains-tab').addEventListener('shown.bs.tab', function (event) { //#novel_structural_domains
             document.querySelector("#table_container").style.display = "none";
             document.querySelector("#select_controls").style.display = "none";
+            window.location.hash = "#novel_structural_domains";
         })
 
-        document.querySelector('#myTab #download-tab').addEventListener('shown.bs.tab', function (event) {
+        document.querySelector('#myTab #download-tab').addEventListener('shown.bs.tab', function (event) { //#download
             document.querySelector("#table_container").style.display = "none";
             document.querySelector("#select_controls").style.display = "none";
+            window.location.hash = "#download";
         })
         
         document.querySelector('#myTab #about-tab').addEventListener('shown.bs.tab', function (event) {
@@ -842,31 +849,32 @@ The number of proteins with the corresponding domain pair is given for all SimCh
             document.querySelector("#select_controls").style.display = "none";
         })
         
+//        links to tabs  --------------------------------------------------------
         if(window.location.hash == '#localization' ) { 
-             var someVarName = document.querySelector('#fig1-tab'); // theTabID of the tab you want to open
+             var someVarName = document.querySelector('#fig1-tab'); 
              var tab = new bootstrap.Tab(someVarName);
              tab.show();
             } else if (window.location.hash == '#classification'){
-             var someVarName = document.querySelector('#fig2-tab'); // theTabID of the tab you want to open
+             var someVarName = document.querySelector('#fig2-tab'); 
              var tab = new bootstrap.Tab(someVarName);
              tab.show(); 
             } else if (window.location.hash == '#domain_composition'){
-             var someVarName = document.querySelector('#SHvsPFAM-tab'); // theTabID of the tab you want to open
+             var someVarName = document.querySelector('#SHvsPFAM-tab'); 
              var tab = new bootstrap.Tab(someVarName);
              tab.show(); 
             } else if (window.location.hash == '#download'){
-             var someVarName = document.querySelector('#download-tab'); // theTabID of the tab you want to open
+             var someVarName = document.querySelector('#download-tab'); 
              var tab = new bootstrap.Tab(someVarName);
              tab.show(); 
             } else if (window.location.hash == '#domain_co-occurrence'){
-             var someVarName = document.querySelector('#PFAMvsPFAM-tab'); // theTabID of the tab you want to open
+             var someVarName = document.querySelector('#PFAMvsPFAM-tab'); 
              var tab = new bootstrap.Tab(someVarName);
              tab.show(); 
             } else if (window.location.hash == '#novel_structural_domains'){
-             var someVarName = document.querySelector('#NovelStructuralDomains-tab'); // theTabID of the tab you want to open
+             var someVarName = document.querySelector('#NovelStructuralDomains-tab'); 
              var tab = new bootstrap.Tab(someVarName);
              tab.show(); 
-            }
+            } 
         
         
 
