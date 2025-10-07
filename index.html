@@ -808,8 +808,15 @@
         document.querySelector("#unirot_filter_vis_switch").addEventListener('change', function () {toggle_filter_columns(this.checked,'uniprot') });
         document.querySelector("#HPA_filter_vis_switch").addEventListener('change', function () {toggle_filter_columns(this.checked,'hpa') });
         document.querySelector("#OpenCell_filter_vis_switch").addEventListener('change', function () {toggle_filter_columns(this.checked,'opencell') });
-        document.querySelector("#sim_chrome_sl_switch").addEventListener('change',  function () {draw_fig2_numbers();
-                                                                                                 reset_fig('fig2',true);});
+        document.querySelector("#sim_chrome_sl_switch").addEventListener('change',  function (event) {draw_fig2_numbers();
+                                                                                                      if (event.target.checked) {
+                                                                                                          reset_fig('fig2',true);
+                                                                                                      } else {
+                                                                                                          reset_fig('fig2',false);
+                                                                                                          table.columns().search('');
+                                                                                                          table.column(16).search('.+', true, false).draw(); //16 simchromsl
+                                                                                                      }
+                                                                                                     });
         document.querySelector("#intersect_switch").addEventListener('change',  function () {filter_table_by_selected_checkboxes(get_current_active_fig())});
         
         document.querySelector('#myTab #home-tab').addEventListener('shown.bs.tab', function (event) {
@@ -830,9 +837,13 @@
         document.querySelector('#myTab #fig2-tab').addEventListener('shown.bs.tab', function (event) { //#classification
             document.querySelector("#table_container").style.display = "block";
             document.querySelector("#select_controls").style.display = "block";
-            reset_fig('fig2',false)
-            table.columns().search('');
-            table.column(16).search('.+', true, false).draw(); //16 simchromsl
+            if (document.querySelector("#sim_chrome_sl_switch").checked) {
+                reset_fig('fig2',true);
+            } else {
+                reset_fig('fig2',false)
+                table.columns().search('');
+                table.column(16).search('.+', true, false).draw(); //16 simchromsl
+            }
             window.location.hash = "#classification";
             // Filer here
         })
