@@ -27,3 +27,16 @@ a[title] {
     padding: 5px;
     background: #f9f9f9;
 }
+.termsfeed-com---palette-light .cc-cp-foot-save {
+    background: #0d6efd !important;
+    color: #fff;
+}
+
+.termsfeed-com---palette-light .cc-nb-okagree {
+    color: #fff;
+    background-color: #0d6efd !important;
+}
+
+.termsfeed-com---palette-light .cc-pc-head-close:focus {
+    border: 2px #0d6efd !important;
+}

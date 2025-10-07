@@ -94,7 +94,7 @@
       <div class="tab-pane  " id="LocalizationTab" role="tabpanel" aria-labelledby="fig1-tab">
           <div class="my-3 text-start" style="max-width: 900px;">
               <b>Interactive Figure 2. Comparative analysis of protein localization ontologies and their content between UniProt, the Human Protein Atlas (HPA) and OpenCell.</b> 
-              <br>Clicking the checkboxes of individual localization terms selects the list of proteins shown in the table below. When several checkboxes are selected the boolean logic operation selected by the toggle below applies.
+              <br>Clicking the checkboxes of individual localization terms selects the list of proteins shown in the table below. When several checkboxes are selected the boolean logic operation selected by the toggle above applies.
           </div>
           <object id="fig1" data="Interactive_Figure_2.svg" height="600px"></object>
       </div>
@@ -106,9 +106,13 @@
                   </p>
               </div>
           <hr style="margin:0;padding:0">
-              <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="sim_chrome_sl_switch">
-                    <label class="form-check-label" for="sim_chrome_sl_switch">Standard SimChrom classification vs single label SimChrom-SL classification</label>
+              <div class="d-flex align-items-center pl-0">
+                    <div class="form-check-label" for="sim_chrome_sl_switch">Classification:</div>
+                    <div class="ms-2 small text-secondary" for="sim_chrome_sl_switch">Standard SimChrom</div>
+                    <div class="form-check form-switch ms-3">   
+                      <input class="form-check-input" type="checkbox" role="switch" id="sim_chrome_sl_switch">
+                    </div>
+                    <div class="ms-2 small text-secondary" for="sim_chrome_sl_switch">Single label SimChrom-SL</div>
                 </div>
           
           <object id="fig2" data="Interactive_Figure_3.svg" height="600px"></object>
