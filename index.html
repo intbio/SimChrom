@@ -39,12 +39,13 @@
         <button class="nav-link" id="PFAMvsPFAM-tab" data-bs-toggle="tab" data-bs-target="#PFAMvsPFAMTab" type="button" role="tab" aria-controls="PFAMvsPFAMTab" aria-selected="false">Domain co-occurence</button>
       </li>
       <li class="nav-item" role="presentation">
+        <button class="nav-link" id="Download-tab" data-bs-toggle="tab" data-bs-target="#DownloadTab" type="button" role="tab" aria-controls="DownloadTab" aria-selected="false">Download reference datasets</button>
+      </li>  
+      <li class="nav-item" role="presentation">
         <button class="nav-link" id="NovelStructuralDomains-tab" data-bs-toggle="tab" data-bs-target="#NovelStructuralDomainsTab" type="button" role="tab" aria-controls="NovelStructuralDomainsTab" aria-selected="false">Novel Structural Domains</button>
       </li>
         
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="Download-tab" data-bs-toggle="tab" data-bs-target="#DownloadTab" type="button" role="tab" aria-controls="DownloadTab" aria-selected="false">Download reference datasets</button>
-      </li>
+
       <li class="nav-item" role="presentation">
         <button class="nav-link d-none" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">Methods</button>
       </li>
@@ -172,30 +173,10 @@
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <b>Interactive Table 1.</b> Constructed reference datasets of nuclear and non-nuclear proteins at different levels of confidence and uniqueness of localization (uniquely localized or shared localization with other cellular compartments).
+                    <b>Interactive Table 1.</b> Representative list of nuclear and chromatome datasets from MS-based experimental studies.	
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                     <table id='download_table1' class="table table-striped"><thead><tr><th>Dataset name (download protein list)</th><th>Definition of dataset</th><th>Number of proteins</th></tr></thead><tbody><tr><td>NULOC_CS</td><td>entries annotated as nuclear in both databases: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved), excludes proteins labeled only as non-nuclear in the OpenCell database (annotation grade 2 or 3)</td><td>3296</td></tr><tr><td>NULOC_CS_NECF</td><td>entries annotated as nuclear in both databases: UniProt AND HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>3988</td></tr><tr><td>NULOC_CS_UL</td><td>entries annotated only as nuclear in both databases: UniProt (provided evidence code is available) AND HPA (with reliability score: Enhanced, Supported, Approved), excludes proteins labeled only as non-nuclear in the OpenCell database (annotation grade 2 or 3)</td><td>1322</td></tr>
-                        <tr><td>NULOC_CS_UL_NECF</td><td>entries annotated only as nuclear in both databases: UniProt AND HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>1322</td></tr><tr><td>NULOC_JT</td><td>entries annotated as nuclear in at least one database: UniProt (provided evidence code is available), HPA (with evidence tags: Enhanced, Supported, Approved), OpenCell (annotation grade 2 or 3)</td><td>8048</td></tr><tr><td>NULOC_JT_NECF</td><td>entries annotated as nuclear in at least one database: UniProt, HPA, OpenCell</td><td>8912</td></tr><tr><td>NULOC_JT_UL</td><td>entries annotated only as nuclear in in at least one database: UniProt (provided evidence code is available) OR HPA (with reliability score: Enhanced, Supported, Approved) OR OpenCell database (annotation grade 2 or 3)</td><td>4292</td></tr>
-                        <tr><td>NULOC_JT_UL_NECF</td><td>entries annotated only as nuclear in in at least one database: UniProt OR HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>4292</td></tr><tr><td>NON_NULOC_CS</td><td>proteins whose localization annotations exclude nuclear localization in both databases: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved)</td><td>3674</td></tr><tr><td>NON_NULOC_JT</td><td>proteins whose localization annotations exclude nuclear localization at least one databases: UniProt (provided evidence code is available) OR HPA (with evidence tags: Enhanced, Supported, Approved) OR OpenCell (annotation grade 2 or 3)</td><td>11479</td></tr><tr><td>CYTLOC_CS_UL</td><td>proteins with only aggregate cytoplasm annotation in both database: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved)</td><td>2026</td></tr></tbody></table>
-
-                  </div>
-                </div>
-              </div>
-                  
-                  
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <b>Interactive Table 2.</b> Representative list of nuclear and chromatome datasets from MS-based experimental studies.	
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <table id='download_table2' class="table table-striped"><thead><tr><th>Reference</th><th>Chromatin state specificity</th><th>Chromatin purification methods (short) and additional computation filtration</th><th>Type of cells</th><th>Proteins identified (by authors)</th><th>Processed number of proteins</th><th>Download protein list</th></tr></thead><tbody><tr><td>Torrente et al., 2011</td><td>Total chromatin, euchromatin, heterochromatin</td><td>(1) Total chromatin extraction with hypotonic lysis, Triton X-100 permeabilization, low-speed centrifugation, and EDTA-mediated nuclear lysis. (2) Salt extraction using high salt buffer (420 mM KCl), sonication, centrifugation, followed by dialysis. (3) Micrococcal nuclease (MNase) digestion, including total digestion and partial digestion to separate euchromatin and heterochromatin fractions.</td><td>HeLa S3</td><td>1038 (total chromatin extraction), 1388 (salt), 949 (MNase); 751 (partial MNase); 1912 (all identified chromatin proteins)</td><td>1501</td><td>torrente_2011</td></tr>
@@ -206,6 +187,26 @@
                     <tr><td>Shi et al., 2021</td><td>Promoter-proximal chromatin</td><td>Hi-MS (Hi-C-based proteomics, adapted from BL-Hi-C): cells crosslinked with 1% formaldehyde; genomic DNA digested with HaeIII (GGCC sites); ligated with biotinylated bridge linkers; nuclei lysed in 0.2% SDS; chromatin sonicated; chromatin-DNA complexes captured on streptavidin beads. Quantified sensitivity to 1,6-hexanediol evaluated via AICAP index (Anti-1,6-Hexanediol Index of Chromatin-Associated Proteins).</td><td>K562</td><td>3228</td><td>2848</td><td>shi_2021</td></tr><tr><td>Ugur et al., 2023</td><td>Total chromatin</td><td>Chromatin Aggregation Capture (ChAC): nuclei fixed with 1% formaldehyde, lysed with SDS and urea, sonicated, and purified by protein aggregation capture (PAC) on magnetic beads. DIA-MS with DIA-NN used for quantification.</td><td>Human ESCs (H9)</td><td>2487</td><td>1730</td><td>ugur_2023</td></tr>
                     <tr><td>Alvarez et al., 2023</td><td>Time-resolved (nascent, G2/M, early and late G1)</td><td>Nascent Chromatin Capture (NCC) method, which relies on pulse-labeling newly replicated DNA with biotin-dUTP, followed by formaldehyde crosslinking and sonication-based chromatin fragmentation. Biotinylated DNA-protein complexes were affinity-purified using streptavidin magnetic beads. HeLa S3 cells were synchronized and harvested at five post-replication time points (Nasc, Late S, G2/M, early G1, late G1) across six biological replicates.</td><td>HeLa S3</td><td>1454 (present at all time points in all 6 replicates; from total of 5770)</td><td>1478 (2894 total)</td><td>alvarez_2023</td></tr>
                     <tr><td>Alvarez et al., 2023</td><td>Time-resolved (nascent, G2/M, early and late G1)</td><td>isolation of Proteins On Nascent DNA (iPOND): formaldehyde crosslinking (1%), EdU labeling for 15 minutes, click chemistry with biotin-azide, chromatin fragmentation, streptavidin bead enrichment.</td><td>TIG-3 fibroblasts</td><td>2351 (detected in 4 to 5 of 5 replicates)</td><td>2397 (2894 total)</td><td>alvarez_2023</td></tr></tbody></table>          </div>         -->
+ 
+                  </div>
+                </div>
+              </div>
+                  
+                  
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <b>Interactive Table 2.</b> Constructed reference datasets of nuclear and non-nuclear proteins at different levels of confidence and uniqueness of localization (uniquely localized or shared localization with other cellular compartments).
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <table id='download_table1' class="table table-striped"><thead><tr><th>Dataset name (download protein list)</th><th>Definition of dataset</th><th>Number of proteins</th></tr></thead><tbody><tr><td>NULOC_CS</td><td>entries annotated as nuclear in both databases: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved), excludes proteins labeled only as non-nuclear in the OpenCell database (annotation grade 2 or 3)</td><td>3296</td></tr><tr><td>NULOC_CS_NECF</td><td>entries annotated as nuclear in both databases: UniProt AND HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>3988</td></tr><tr><td>NULOC_CS_UL</td><td>entries annotated only as nuclear in both databases: UniProt (provided evidence code is available) AND HPA (with reliability score: Enhanced, Supported, Approved), excludes proteins labeled only as non-nuclear in the OpenCell database (annotation grade 2 or 3)</td><td>1322</td></tr>
+                        <tr><td>NULOC_CS_UL_NECF</td><td>entries annotated only as nuclear in both databases: UniProt AND HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>1322</td></tr><tr><td>NULOC_JT</td><td>entries annotated as nuclear in at least one database: UniProt (provided evidence code is available), HPA (with evidence tags: Enhanced, Supported, Approved), OpenCell (annotation grade 2 or 3)</td><td>8048</td></tr><tr><td>NULOC_JT_NECF</td><td>entries annotated as nuclear in at least one database: UniProt, HPA, OpenCell</td><td>8912</td></tr><tr><td>NULOC_JT_UL</td><td>entries annotated only as nuclear in in at least one database: UniProt (provided evidence code is available) OR HPA (with reliability score: Enhanced, Supported, Approved) OR OpenCell database (annotation grade 2 or 3)</td><td>4292</td></tr>
+                        <tr><td>NULOC_JT_UL_NECF</td><td>entries annotated only as nuclear in in at least one database: UniProt OR HPA, excludes proteins labeled only as non-nuclear in the OpenCell database</td><td>4292</td></tr><tr><td>NON_NULOC_CS</td><td>proteins whose localization annotations exclude nuclear localization in both databases: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved)</td><td>3674</td></tr><tr><td>NON_NULOC_JT</td><td>proteins whose localization annotations exclude nuclear localization at least one databases: UniProt (provided evidence code is available) OR HPA (with evidence tags: Enhanced, Supported, Approved) OR OpenCell (annotation grade 2 or 3)</td><td>11479</td></tr><tr><td>CYTLOC_CS_UL</td><td>proteins with only aggregate cytoplasm annotation in both database: UniProt (provided evidence code is available) AND HPA (with evidence tags: Enhanced, Supported, Approved)</td><td>2026</td></tr></tbody></table>
 
                   </div>
                 </div>
