@@ -7,8 +7,8 @@
    viewBox="0 0 297 210"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="Fig1_landing_v5.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="Interactive_Figure_1.svg"
    inkscape:export-filename="C:\Users\Anna\Desktop\Figures\chromatome\fig1_v3.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -29,13 +29,13 @@
      inkscape:object-nodes="true"
      inkscape:lockguides="false"
      inkscape:snap-global="true"
-     inkscape:zoom="1.9999999"
-     inkscape:cx="307.00001"
-     inkscape:cy="735.50002"
-     inkscape:window-width="3840"
-     inkscape:window-height="2078"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:zoom="1.4142135"
+     inkscape:cx="128.33989"
+     inkscape:cy="450.42704"
+     inkscape:window-width="3440"
+     inkscape:window-height="1372"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:snap-grids="false"
@@ -764,8 +764,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter177105"
-       x="-0.015750537"
-       y="-0.021086303"
+       x="-0.015750543"
+       y="-0.021086306"
        width="1.0314836"
        height="1.0422602">
       <feGaussianBlur
@@ -982,8 +982,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter46907-3"
-       x="-0.052692356"
-       y="-0.034843075"
+       x="-0.052692365"
+       y="-0.034843081"
        width="1.1046512"
        height="1.0697036">
       <feGaussianBlur
@@ -995,8 +995,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter46895-2"
-       x="-0.03691638"
-       y="-0.043561223"
+       x="-0.036916381"
+       y="-0.043561231"
        width="1.0736194"
        height="1.0878648">
       <feGaussianBlur
@@ -1008,8 +1008,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter46891-5"
-       x="-0.03691638"
-       y="-0.043561205"
+       x="-0.036916381"
+       y="-0.043561214"
        width="1.0736194"
        height="1.0878648">
       <feGaussianBlur
@@ -1034,8 +1034,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter46919-2"
-       x="-0.033645826"
-       y="-0.028826912"
+       x="-0.033645827"
+       y="-0.028826915"
        width="1.0661989"
        height="1.0570376">
       <feGaussianBlur
@@ -1060,8 +1060,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter46911-4"
-       x="-0.02804677"
-       y="-0.02906967"
+       x="-0.028046777"
+       y="-0.029069675"
        width="1.0569792"
        height="1.0590613">
       <feGaussianBlur
@@ -1073,10 +1073,10 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter46899-0"
-       x="-0.035645371"
-       y="-0.029710459"
+       x="-0.035645377"
+       y="-0.029710463"
        width="1.0720023"
-       height="1.0593887">
+       height="1.0593888">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.011211141"
@@ -1086,8 +1086,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter46879-2"
-       x="-0.036120836"
-       y="-0.034981733"
+       x="-0.036120843"
+       y="-0.034981738"
        width="1.0717078"
        height="1.0698712">
       <feGaussianBlur
@@ -1133,8 +1133,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter177105-9-3"
-       x="-0.020325051"
-       y="-0.027212889"
+       x="-0.020325057"
+       y="-0.027212893"
        width="1.0406234"
        height="1.0545431">
       <feGaussianBlur
@@ -1146,8 +1146,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter177105-8"
-       x="-0.016222884"
-       y="-0.021718988"
+       x="-0.016222891"
+       y="-0.021718991"
        width="1.0324274"
        height="1.0435286">
       <feGaussianBlur
@@ -1159,8 +1159,8 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter177105-9"
-       x="-0.017770642"
-       y="-0.023792005"
+       x="-0.017770649"
+       y="-0.023792008"
        width="1.0355199"
        height="1.0476847">
       <feGaussianBlur
@@ -1173,6 +1173,52 @@
      inkscape:label="Слой 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:0;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="125.89876"
+       y="36.102139"
+       id="text186137"><tspan
+         sodipodi:role="line"
+         style="font-weight:bold;font-size:5.64444px;line-height:1.25;stroke-width:0.264583"
+         x="125.89876"
+         y="36.102139"
+         id="tspan189398" /><tspan
+         sodipodi:role="line"
+         style="font-weight:bold;font-size:5.64444px;line-height:1.25;stroke-width:0.264583"
+         x="125.89876"
+         y="43.157688"
+         id="tspan605367" /><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
+         x="125.89876"
+         y="50.063435"
+         id="tspan577385">Nuclear envelope</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
+         x="125.89876"
+         y="57.224823"
+         id="tspan585001">Nuclear pore</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
+         x="125.89876"
+         y="64.386215"
+         id="tspan585003">Nuclear lamina</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
+         x="125.89876"
+         y="71.547607"
+         id="tspan585005">Nucleoplasm</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
+         x="125.89876"
+         y="78.709"
+         id="tspan608893">Nucleolus</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
+         x="125.89876"
+         y="85.870384"
+         id="tspan585805">Nuclear bodies </tspan></text>
     <path
        id="path19162-63"
        style="opacity:0.387634;fill:#f1f0d6;fill-opacity:1;stroke:#000000;stroke-width:0.207697;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.741176;paint-order:markers fill stroke"
@@ -3343,99 +3389,6 @@
          x="213.37955"
          y="79.080078"
          id="tspan57151">OpenCell)</tspan></text>
-    <rect
-       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="chromatin_nucleosol-0"
-       class="svgcheckbox"
-       width="75.198563"
-       height="10.901178"
-       rx="2.1166666"
-       ry="2.1166668"
-       x="209.61615"
-       y="44.610344"
-       list="localization" />
-    <rect
-       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="landing_nucleus"
-       class="svgcheckbox"
-       width="43.83289"
-       height="9.8187389"
-       rx="2.2110388"
-       ry="2.1166668"
-       x="0.72437298"
-       y="1.8708949"
-       children="uniprot_nucleus,hpa_nucleus_a,opencell_nucleus_a"
-       list="localization" />
-    <rect
-       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="landing_nucleoplasm"
-       class="svgcheckbox"
-       width="49.60313"
-       height="5.2354178"
-       rx="2.3313985"
-       ry="2.1166668"
-       x="123.07347"
-       y="67.394714"
-       children="uniprot_nucleoplasm,hpa_nucleoplasm,opencell_nucleoplasm"
-       list="localization" />
-    <rect
-       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="landing_nuclear_lamina"
-       class="svgcheckbox"
-       width="49.603127"
-       height="5.2354178"
-       rx="2.633816"
-       ry="2.1166668"
-       x="123.07347"
-       y="60.189148"
-       children="uniprot_nucleus_lamina"
-       list="localization" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:0;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="125.89876"
-       y="36.102139"
-       id="text186137"><tspan
-         sodipodi:role="line"
-         style="font-weight:bold;font-size:5.64444px;line-height:1.25;stroke-width:0.264583"
-         x="125.89876"
-         y="36.102139"
-         id="tspan189398" /><tspan
-         sodipodi:role="line"
-         style="font-weight:bold;font-size:5.64444px;line-height:1.25;stroke-width:0.264583"
-         x="125.89876"
-         y="43.157688"
-         id="tspan605367" /><tspan
-         sodipodi:role="line"
-         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
-         x="125.89876"
-         y="50.063435"
-         id="tspan577385">Nuclear envelope</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
-         x="125.89876"
-         y="57.224823"
-         id="tspan585001">Nuclear pore</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
-         x="125.89876"
-         y="64.386215"
-         id="tspan585003">Nuclear lamina</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
-         x="125.89876"
-         y="71.547607"
-         id="tspan585005">Nucleoplasm</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
-         x="125.89876"
-         y="78.709"
-         id="tspan608893">Nucleolus</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:4.93889px;line-height:1.45;stroke-width:0.264583"
-         x="125.89876"
-         y="85.870384"
-         id="tspan585805">Nuclear bodies </tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#DotM)"
        d="m 123.04558,47.63117 -13.82643,0.72761"
@@ -3508,54 +3461,6 @@
        cy="48.383514"
        rx="0.14951651"
        ry="0.16605297" />
-    <rect
-       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="landing_nuclear_bodies-7"
-       class="svgcheckbox"
-       width="49.603127"
-       height="5.2354183"
-       rx="2.1166661"
-       ry="2.1166668"
-       x="123.07347"
-       y="81.805878"
-       children="uniprot_nuclear_body,hpa_nuclear_bodies,hpa_nuclear_speckles,opencell_nuclear_punctae"
-       list="localization" />
-    <rect
-       style="fill:none;stroke:#d3d3d3;stroke-width:0.265;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="landing_nucleolus-3"
-       class="svgcheckbox"
-       width="49.61924"
-       height="5.2350001"
-       rx="2.1166666"
-       ry="2.1166668"
-       x="123.07365"
-       y="74.600494"
-       children="uniprot_nucleolus,hpa_nucleoli,opencell_nucleolus_gc,opencell_nucleolus_fc_dfc"
-       list="localization" />
-    <rect
-       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="landing_nuclear_pore-5"
-       class="svgcheckbox"
-       width="49.598694"
-       height="5.2354178"
-       rx="2.1166668"
-       ry="2.1166668"
-       x="123.07347"
-       y="52.983582"
-       children="uniprot_nuclear_pore_complex"
-       list="localization" />
-    <rect
-       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="landing_nuclear_membrane"
-       class="svgcheckbox"
-       width="49.58659"
-       height="5.2354178"
-       rx="2.1166666"
-       ry="2.1166668"
-       x="123.07347"
-       y="45.778015"
-       children="uniprot_nucleus_envelope,hpa_nuclear_membrane,opencell_nuclear_membrane"
-       list="localization" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#StopL-1);marker-end:url(#marker680198-4)"
        d="m 205.42562,19.114463 v 79.55607"
@@ -4004,5 +3909,100 @@
        id="path68296-9-6-9-4"
        style="fill:#576656;fill-opacity:1;stroke:none;stroke-width:0.187873;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
        d="m 172.55593,172.27842 a 2.8757922,2.1557952 9.6669009 0 0 -2.2092,1.06689 2.8757922,2.1557952 9.6669009 0 0 1.3738,2.98618 2.8757922,2.1557952 9.6669009 0 0 0.7613,0.23334 2.8757922,2.1557952 9.6669009 0 1 -0.3321,-2.27576 2.8757922,2.1557952 9.6669009 0 1 3.0415,-0.99688 2.8757922,2.1557952 9.6669009 0 0 -1.0438,-0.71043 2.8757922,2.1557952 9.6669009 0 0 -1.5915,-0.30334 z" />
+    <rect
+       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="chromatin_nucleosol-0"
+       class="svgcheckbox"
+       width="75.198563"
+       height="10.901178"
+       rx="2.1166666"
+       ry="2.1166668"
+       x="209.61615"
+       y="44.610344"
+       list="localization" />
+    <rect
+       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="landing_nuclear_membrane"
+       class="svgcheckbox"
+       width="49.58659"
+       height="5.2354178"
+       rx="2.1166666"
+       ry="2.1166668"
+       x="123.07347"
+       y="45.778015"
+       children="uniprot_nucleus_envelope,hpa_nuclear_membrane,opencell_nuclear_membrane"
+       list="localization" />
+    <rect
+       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="landing_nuclear_pore-5"
+       class="svgcheckbox"
+       width="49.598694"
+       height="5.2354178"
+       rx="2.1166668"
+       ry="2.1166668"
+       x="123.07347"
+       y="52.983582"
+       children="uniprot_nuclear_pore_complex"
+       list="localization" />
+    <rect
+       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="landing_nuclear_lamina"
+       class="svgcheckbox"
+       width="49.603127"
+       height="5.2354178"
+       rx="2.633816"
+       ry="2.1166668"
+       x="123.07347"
+       y="60.189148"
+       children="uniprot_nucleus_lamina"
+       list="localization" />
+    <rect
+       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="landing_nucleoplasm"
+       class="svgcheckbox"
+       width="49.60313"
+       height="5.2354178"
+       rx="2.3313985"
+       ry="2.1166668"
+       x="123.07347"
+       y="67.394714"
+       children="uniprot_nucleoplasm,hpa_nucleoplasm,opencell_nucleoplasm"
+       list="localization" />
+    <rect
+       style="fill:none;stroke:#d3d3d3;stroke-width:0.265;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="landing_nucleolus-3"
+       class="svgcheckbox"
+       width="49.61924"
+       height="5.2350001"
+       rx="2.1166666"
+       ry="2.1166668"
+       x="123.07365"
+       y="74.600494"
+       children="uniprot_nucleolus,hpa_nucleoli,opencell_nucleolus_gc,opencell_nucleolus_fc_dfc"
+       list="localization" />
+    <rect
+       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="landing_nuclear_bodies-7"
+       class="svgcheckbox"
+       width="49.603127"
+       height="5.2354183"
+       rx="2.1166661"
+       ry="2.1166668"
+       x="123.07347"
+       y="81.805878"
+       children="uniprot_nuclear_body,hpa_nuclear_bodies,hpa_nuclear_speckles,opencell_nuclear_punctae"
+       list="localization" />
+    <rect
+       style="fill:none;stroke:#d3d3d3;stroke-width:0.264582;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="landing_nucleus"
+       class="svgcheckbox"
+       width="43.83289"
+       height="9.8187389"
+       rx="2.2110388"
+       ry="2.1166668"
+       x="0.72437298"
+       y="1.8708949"
+       children="uniprot_nucleus,hpa_nucleus_a,opencell_nucleus_a"
+       list="localization" />
   </g>
 </svg>
