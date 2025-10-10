@@ -1,0 +1,237 @@
+# Supplementary Table ST4. SimChrom classification terms and details about their protein contents,,,,,,,,
+#,SimChrom term,GO terms used to build SimChrom DB,Explanation of the selected GO terms to build SimChrom DB,Number of proteins initially extracted from GO without proteins in nested classes (before additional filtration),Databases and literature sources used to add proteins and explanation,Additional filtering applied (* - indicates that proteins belonging to the Histones term were removed),Total number of proteins (with proteins in nested classes),Additional notes 
+1,Centromere-associated,GO:0000775,"CC GO:0000775 chromosome, centromeric region",247,,*,241,-
+2,Chromatin remodelers,"GO:0140658,GO:0071564,GO:0140092,GO:0071565,GO:0035060,GO:0140091,GO:0110016,GO:0016586,GO:0016514,GO:0140093
+","MF GO:0140658 ATP-dependent chromatin remodeler activity
+
+from the child terms of ""BP GO:0006338 chromatin remodeling"" only the following were included:
+
+СС GO:0071564    npBAF complex
+СС GO:0140092    bBAF complex
+СС GO:0071565    nBAF complex
+СС GO:0035060    brahma complex
+СС GO:0140091    mBAF complex
+СС GO:0110016    B-WICH complex
+СС GO:0016586    RSC-type complex
+СС GO:0016514    SWI/SNF complex
+СС GO:0140093    esBAF complex",73,"[Zhang P.  et al., 2016 https://doi.org/10.2174/1389203717666160122120310]",*,114,There were no new proteins in the SWI/SNF infobase in addition to the GO.  The next version could include the six missing genes from [https://doi.org/10.1146/annurev.biochem.77.062706.153223].
+3,DNA (de)methylation ,"GO:0035514,GO:0009008,GO:0070579","MF GO:0035514    DNA demethylase activity
+MF GO:0009008    DNA-methyltransferase activity
+MF GO:0070579 5-methylcytosine dioxygenase activity",15,-,*,15,-
+4,[DNA metabolic processes],-,-,-,-,*,496,"The term includes only proteins from child terms: DNA replication, DNA repair, DNA recombination"
+5,DNA recombination,"GO:0035825,GO:0006312","from the child terms of ""BP GO:0006310 DNA recombination""
+the following were included:
+
+BP GO:0035825    homologous recombination
+BP GO:0006312    mitotic recombination
+
+from the child terms of ""BP GO:0006310 DNA recombination"" the following were not included:
+
+GO:0071139    resolution of DNA recombination intermediates
+GO:0045911    positive regulation of DNA recombination
+GO:0042150    plasmid recombination
+GO:0042152    RNA-mediated DNA recombination
+GO:0000713    meiotic heteroduplex formation
+GO:0000150    DNA strand exchange activity
+GO:0000732    DNA strand displacement
+GO:0051102    DNA ligation involved in DNA recombination
+GO:0045910    negative regulation of DNA recombination 
+GO:0000018    regulation of DNA recombination
+GO:0016444    somatic cell DNA recombination
+GO:1905951    mitochondrion DNA recombination
+GO:0000725    recombinational repair
+GO:0045458    recombination within rDNA repeats
+GO:1990067    intrachromosomal DNA recombination
+GO:0042148    DNA strand invasion
+GO:0006313    DNA transposition
+GO:0006314    intron homing",78,-,*,78,
+6,DNA repair,"GO:0009380,GO:1990391,GO:0097196,GO:0000725,GO:0006290,GO:0006307,GO:0006284,GO:0006289,GO:0006302,GO:0010213,GO:0006301,GO:0000012,GO:0036297,GO:0006298,GO:0070914,GO:0141168","from the child terms of ""BP GO:0006281 DNA repair""
+the following were included:
+
+CC GO:0009380 excinuclease repair complex
+CC GO:1990391 DNA repair complex
+CC GO:0097196 Shu complex
+MP GO:0000725 recombinational repair
+MP GO:0006290 pyrimidine dimer repair
+MP GO:0006307 DNA alkylation repair
+MP GO:0006284 base-excision repair
+MP GO:0006289 nucleotide-excision repair
+MP GO:0006302 double-strand break repair
+MP GO:0010213 non-photoreactive DNA repair
+MP GO:0006301 postreplication repair
+MP GO:0000012 single strand break repair
+MP GO:0036297 interstrand cross-link repair
+MP GO:0006298 mismatch repair
+MP GO:0070914 UV-damage excision repair
+MP GO:0141168 chromosomal 5-methylcytosine DNA demethylation, oxidative deamination pathway
+
+from the child terms of ""BP GO:0006281 DNA repair"" the following were not included:
+
+MP GO:0043504 mitochondrial DNA repair
+MP GO:0000731 DNA synthesis involved in DNA repair
+MP GO:0045739 positive regulation of DNA repair
+MP GO:0045738 negative regulation of DNA repair
+MP GO:0051103 DNA ligation involved in DNA repair
+MP GO:0106300 protein-DNA covalent cross-linking repair
+MP GO:0006282 regulation of DNA repair regulates
+MP GO:0046787 viral DNA repair",349,-,*,347,
+7,DNA replication,GO:0033260,BP GO:0033260 nuclear DNA replication,205,-,*,205,
+8,DNA-binding transcription factors,"GO:0000981,GO:0098531,GO:0001217,GO:0001216","from the child terms of ""MF GO:0003700 DNA-binding transcription factor activity"" the following were included:
+
+MF GO:0000981    DNA-binding transcription factor activity, RNA polymerase II-specific
+MF GO:0098531    ligand-activated transcription factor activity
+MF GO:0001217    DNA-binding transcription repressor activity
+MF GO:0001216    DNA-binding transcription activator activity
+
+from the child terms of ""MF GO:0003700 DNA-binding transcription factor activity"" the following were not included:
+
+BP GO:0051090    regulation of DNA-binding transcription factor activity
+BP GO:0043433    negative regulation of DNA-binding transcription factor activity
+BP GO:0051091    positive regulation of DNA-binding transcription factor activity
+MF GO:0016987    sigma factor activity
+",1385,-,*,1385,"This term includes only DNA-binding TF, while general TF (TFIIA, TFIIB, TFIID, TFIIE, TFIIF, and TFIIH) are in term: general TF.
+Despite the existence of other resources with human TF (e.g. TRRUST v2, HOCOMOCO, The Human Transcription Factors), we used only GO term due to its completness according to [Ruth C. Lovering et al., 2021, https://doi.org/10.1016/j.bbagrm.2021.194765]. "
+9,DNA-acting enzymes,GO:0140097,"from the child terms of ""MF GO:0140097 catalytic activity, acting on DNA"" all were included:
+
+MF GO:0051575    5'-deoxyribose-5-phosphate lyase activity
+MF GO:0140670    cohesin unloader activity
+MF GO:0008094    ATP-dependent activity, acting on DNA
+MF GO:0004536    DNA nuclease activity
+MF GO:0034061    DNA polymerase activity
+MF GO:0106334    3'-deoxyribose phosphate lyase activity
+MF GO:0004803    transposase activity
+MF GO:0003909    DNA ligase activity
+MF GO:0047839    dATP(dGTP)-DNA purinetransferase activity
+MF GO:0061775    cohesin loader activity
+MF GO:0003906    DNA-(apurinic or apyrimidinic site) endonuclease activity
+MF GO:0033958    DNA-deoxyinosine glycosylase activity
+MF GO:0033959    deoxyribodipyrimidine endonucleosidase activity
+MF GO:0070259    tyrosyl-DNA phosphodiesterase activity
+MF GO:0003913    DNA photolyase activity
+MF GO:0000150    DNA strand exchange activity
+MF GO:0003912    DNA nucleotidylexotransferase activity
+MF GO:0019104    DNA N-glycosylase activity
+MF GO:0033821    DNA beta-glucosyltransferase activity
+MF GO:0043336    site-specific telomere resolvase activity
+MF GO:0090580    phosphodiesterase activity, acting on 3'-phosphoglycolate-terminated DNA strands
+MF GO:0008907    integrase activity
+MF GO:0003916    DNA topoisomerase activity
+MF GO:0033820    DNA alpha-glucosyltransferase activity
+MF GO:0009008    DNA-methyltransferase activity
+MF GO:0035514    DNA demethylase activity",256,-,*,259,
+10,[DNA-templated transcription],-,-,-,-,-,1561,"The term includes only proteins from child terms: RNA polymerases, Regulation of transcription (General TFs and DNA-binding transcription factors)"
+11,Euchromatin-associated,GO:0000791,CC GO:0000791 euchromatin,62,-,*,52,-
+,General TFs,"GO:0000126,GO:0000127,GO:0005672,GO:0005669,GO:0005673,GO:0005674,GO:0005675,GO:0033276","GO:0000126    transcription factor TFIIIB complex
+GO:0000127    transcription factor TFIIIC complex
+GO:0005672    transcription factor TFIIA complex
+GO:0005669    transcription factor TFIID complex
+GO:0005673    transcription factor TFIIE complex
+GO:0005674    transcription factor TFIIF complex
+GO:0005675    transcription factor TFIIH holo complex
+GO:0033276    transcription factor TFTC complex",73,-,,73,-
+12,Heterochromatin-associated,GO:0000792,CC GO:0000792 heterochromatin,81,-,*,76,-
+13,Histone chaperones,-,-,-,"[Hammond C. et al., 2017, https://doi.org/10.1038/nrm.2016.159]",*,35,"Nevertheless that GO has term ""MF GO:0140713 histone chaperone activity"", we used only proteins from review article to fill it due to poor overlap between GO and article"
+14,Histone modification,GO:0140993,MF GO:0140993 histone modifying activity,212,-,*,258,
+15,Histone PTM erasers,"GO:0140789,GO:0140934,GO:0032452,GO:0160009,GO:0004407","MF GO:0140789  histone phosphatase activity,
+MF GO:0140934  histone deubiquitinase activity,
+MF GO:0032452  histone demethylase activity,
+MF GO:0160009  histone decrotonylase activity,
+MF GO:0004407  histone deacetylase activity",64,Histome2,*,42,"
+GO also includes similar term in the cellular component aspect: ""GO:0000118 histone deacetylase complex"". Proteins from these sets did not fully overlap with corresponding terms with molecular function activity, it requires additional analysis to select the best set of GO terms for this SimChrom category. "
+16,Histone PTM readers,"GO:0035064,GO:0106153,GO:0061649,GO:0070577","MF GO:0035064 methylated histone binding, 
+MF GO:0106153 phosphorylated histone binding, 
+MF GO:0061649 ubiquitin modification-dependent histone binding, 
+MF GO:0070577 lysine-acetylated histone binding",103,-,*,103,-
+17,Histone PTM writers,"GO:0106078,GO:0120297,GO:0004402,GO:0120295,GO:0061922,GO:0035173,GO:0042054,GO:0140794,GO:0140069,GO:0140068,GO:0120301,GO:0106229,GO:0140852","MF GO:0106078   histone succinyltransferase activity,
+MF GO:0120297   histone dopaminyltransferase activity,
+MF GO:0004402   histone acetyltransferase activity,
+MF GO:0120295   histone serotonyltransferase activity,
+MF GO:0061922   histone propionyltransferase activity,
+MF GO:0035173   histone kinase activity,
+MF GO:0042054   histone methyltransferase activity,
+MF GO:0140794   histone arginine deiminase activity,
+MF GO:0140069   histone butyryltransferase activity,
+MF GO:0140068   histone crotonyltransferase activity,
+MF GO:0120301   histone lactyltransferase activity,
+MF GO:0106229   histone glutaryltransferase activity,
+MF GO:0140852   histone ubiquitin ligase activity",150,Histome2,*,108,"GO also includes similar terms in the cellular component aspect: ""GO:0035097 histone methyltransferase complex"", ""GO:0000123 histone acetyltransferase complex"". Proteins from these sets did not fully overlap with corresponding terms with molecular function activity, it requires additional analysis to select the best set of GO terms for this SimChrom category. "
+18,Histone tail cleavage,-,-,-,"review article [Liu H. et al., 2017, https://doi.org/10.1073/pnas.1706831114; Azad G.K. et al., 2018, https://doi.org/10.1016/j.jmb.2018.07.013], CTSL [Duncan E.M. et al., 2008, https://doi.org/10.1016/j.cell.2008.09.055], CTSD [Khalkhali-Ellis Z. et al., 2014, https://doi.org/10.1371/journal.pone.0103230], MMP2 [Ali M.A.M. et al., 2021, https://doi.org/10.1111/febs.16061], (CTSG, ELANE, PRTN3) [Cheung P. et al., 2021, https://doi.org/10.1038/s41590-021-00928-y], MMP9 [Shin Y. et al.,2022, https://doi.org/10.1038/s41388-021-02109-5]",*,10,-
+19,Histones,-,-,-,"HistoneDB 2.0, [Ruth L. Seal et al., 2022, https://doi.org/10.1186/s13072-022-00467-2]",,62,"The more similar term in terms of protein content is ""MF GO:0030527 structural constituent of chromatin"", but it also includes non-histone proteins."
+20,[HMG],-,-,-,-,*,38,
+21,HMG_A/B/N,-,-,-,GeneCards,*,11,
+22,Housekeeping DNA-binding TFs,-,-,-,-,*,552,"The category contains common proteins from ""DNA-binding transcription factors"" and housekeeping proteins by HPA (https://www.proteinatlas.org/humanproteome/tissue/housekeeping) "
+23,Non-Housekeeping DNA-binding TFs,-,-,-,-,-,-,-
+24,Methylated DNA binding,"GO:0010385,GO:0008327","MF GO:0010385 double-stranded methylated DNA binding
+MF GO:0008327 methyl-CpG binding",35,-,*,34,-
+25,[Nuclear RNA binding proteins]  ,-,-,-,-,,309,"The term includes only proteins from child terms: Preribosome-associated, RNA processing, RNA modification"
+26,Nuclear hormone receptors,"GO:0004879,GO:0003707","MF GO:0004879 nuclear receptor activity
+MF GO:0003707 nuclear steroid receptor activity",59,-,*,59,-
+27,Other families with HMG-box domain,-,-,-,"HOCOMOCO, GeneCards",*,27,-
+28,Pioneer TFs,-,-,-,"[Alexandre Mayran et al., 2018, https://doi.org/10.1074/jbc.r117.001232]",*,21,-
+29,Preribosome-associated,GO:0030684,CC GO:0030684 preribosome,107,-,"*, 
+only the proteins also reported as nuclear RBPs in [Haofan Sun et al., 2024, https://doi.org/10.1038/s41467-024-44987-9] or [Eric L. Van Nostrand et al., 2020, https://doi.org/10.1038/s41586-020-2077-3] were retained
+",73,-
+30,Regulation of transcription,"GO:0000120,GO:0090575,GO:0090576 ","CC GO:0000120    RNA polymerase I transcription regulator complex
+CC GO:0090575    RNA polymerase II transcription regulator complex
+CC GO:0090576    RNA polymerase III transcription regulator complex",271,-,,1528,-
+31,RNA modification,"GO:0016556,GO:0035513,GO:0040031,GO:0006400,GO:0000154,GO:0001510,GO:1990884","from the child terms of ""BP GO:0009451 RNA modification""
+the following were included:
+
+BP GO:0016556    mRNA modification
+BP GO:0035513    oxidative RNA demethylation
+BP GO:0040031    snRNA modification
+BP GO:0006400    tRNA modification
+BP GO:0000154    rRNA modification
+BP GO:0001510    RNA methylation
+BP GO:1990884    RNA acetylation
+
+from the child terms of ""BP GO:0009451 RNA modification""
+the following were not included:
+
+BP GO:1900865    chloroplast RNA modification
+BP GO:1900864    mitochondrial RNA modification
+BP GO:0016553    base conversion or substitution editing
+BP GO:0070706    RNA nucleotide deletion
+BP GO:0070705    RNA nucleotide insertion
+BP GO:0001522    pseudouridine synthesis",153,-,"*, 
+only the proteins also reported as nuclear RBPs in [Haofan Sun et al., 2024, https://doi.org/10.1038/s41467-024-44987-9] or [Eric L. Van Nostrand et al., 2020, https://doi.org/10.1038/s41586-020-2077-3] were retained
+",27,"There were also simillar terms as ""mRNA methyltransferase activity"" (GO:0008174) etc. It requires additional analysis to select the best set of GO terms for this SimChrom category."
+32,RNA polymerases,"GO:0005736,GO:0005665,GO:0005666","from the child terms of ""CC GO:0055029 nuclear DNA-directed RNA polymerase complex"" the following were included:
+CC GO:0005736    RNA polymerase I complex
+CC GO:0005665    RNA polymerase II, core complex
+CC GO:0005666    RNA polymerase III complex",34,-,*,34,-
+33,RNA processing,"GO:0000178,GO:0031123,GO:0180035,GO:0000966,GO:0000379,GO:0070918,GO:0008380,GO:0006397","from the child terms of ""BP GO:0006396 RNA processing""
+the following were included:
+
+CC GO:0000178    exosome (RNase complex)
+BP GO:0031123    RNA 3'-end processing
+BP GO:0180035    lncRNA processing
+BP GO:0000966    RNA 5'-end processing
+BP GO:0000379    tRNA-type intron splice site recognition and cleavage
+BP GO:0070918    regulatory ncRNA processing
+BP GO:0008380    RNA splicing
+BP GO:0006397    mRNA processing
+
+from the child terms of ""BP GO:0006396 RNA processing""
+the following were not included:
+
+BP GO:0000963    mitochondrial RNA processing
+BP GO:0031425    chloroplast RNA processing
+BP GO:0140235    RNA polyadenylation at postsynapse",594,-,"*, 
+only the proteins also reported as nuclear RBPs in [Haofan Sun et al., 2024, https://doi.org/10.1038/s41467-024-44987-9] or [Eric L. Van Nostrand et al., 2020, https://doi.org/10.1038/s41586-020-2077-3] were retained
+",232,-
+34,SMC complexes,"GO:0008278,GO:0000796,GO:0030915","CC GO:0008278 cohesin complex
+CC GO:0000796 condensin complex
+CC GO:0030915 Smc5-Smc6 complex",28,-,*,28,"Further analysis of the protein content of the group is required in accordance with the literature source: [Hansol Lee et al., 2021; https://doi.org/10.34184/kssb.2021.9.1.1]."
+35,Telomere-associated,"GO:0034397,GO:0032200,GO:0000781","BP GO:0034397 telomere localization
+BP GO:0032200 telomere organization
+CC GO:0000781chromosome, telomeric region",201,-,*,190,-
+36,X-chromosome inaсtivation,"GO:0042714,GO:0009048,GO:0046536,GO:0009047,GO:0042464","
+
+from the child terms of ""BP GO:0007549 sex-chromosome dosage compensation"" all following were included:
+
+BP GO:0042714    dosage compensation complex assembly
+BP GO:0009048    dosage compensation by inactivation of X chromosome
+CC GO:0046536    dosage compensation complex
+BP GO:0009047    dosage compensation by hyperactivation of X chromosome
+BP GO:0042464    dosage compensation by hypoactivation of X chromosome",16,-,*,14,-
