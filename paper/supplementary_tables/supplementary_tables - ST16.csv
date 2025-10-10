@@ -1,0 +1,96 @@
+# Supplementary Table ST16. Pfam domain models that are present in three or more chromatin/epigenetic regulator proteins.,,,,,,,,,,,
+pfamA_id,pfamA_acc,pfamA_name,domain functional subgroup ,domain functional group ,SimChrom-SL ChromReg ,number of SimChrom proteins,number of ChromReg proteins,number of co-ocurring Pfam domain models in SimChrom proteins,number of co-ocurring Pfam domain models in ChromReg proteins,"number of SimChrom proteins, where the Pfam domain models co-occurs with other domain models","number of ChromReg proteins, where the Pfam domain models co-occurs with other domain models"
+PF00628,PHD,PHD-finger,"Histone methylation, reader",Histone methylation,Histone PTM readers,42,35,49,45,42,35
+PF00856,SET,SET domain,"Histone methylation, writer",Histone methylation,Histone PTM writers,32,32,40,40,32,32
+PF00439,Bromodomain,Bromodomain,"Histone acetylation, reader",Histone acetylation,Histone PTM readers,32,27,43,38,32,27
+PF00271,Helicase_C,Helicase conserved C-terminal domain,Chromatin remodeling,Chromatin remodeling,Chromatin remodelers,66,33,74,33,64,33
+PF00176,SNF2-rel_dom,SNF2-related domain,Chromatin remodeling,Chromatin remodeling,Chromatin remodelers,32,32,31,31,32,32
+PF00855,PWWP,PWWP domain,"Histone methylation, reader",Histone methylation,DNA de_methylation,18,16,28,28,18,16
+PF02008,zf-CXXC,CXXC zinc finger domain,DNA binding,DNA binding,DNA de_methylation,12,12,18,18,12,12
+PF00069,Pkinase,Protein kinase domain,"Histone phosphorylation, writer",Histone phosphorylation,Histone PTM writers,48,31,18,16,48,31
+PF00385,Chromo,Chromo (CHRromatin Organisation MOdifier) domain,"Histone methylation, reader",Histone methylation,Histone PTM readers,23,23,16,16,23,23
+PF02373,JmjC,"JmjC domain, hydroxylase","Histone methylation, eraser",Histone methylation,Histone PTM erasers,21,21,16,16,19,19
+PF00249,Myb_DNA-binding,Myb-like DNA-binding domain,DNA binding,DNA binding,Chromatin remodelers,18,12,21,15,13,12
+PF00505,HMG_box,HMG (high mobility group) box,DNA binding,DNA binding,Other,42,4,27,15,3,3
+PF01426,BAH,BAH domain,"Histone methylation, reader",Histone methylation,DNA de_methylation,7,6,17,14,7,6
+PF17907,AWS,AWS domain,Histone binding,Histone binding,Histone PTM writers,5,5,13,13,5,5
+PF13832,zf-HC5HC2H_2,PHD-zinc-finger like domain,Other,Other,Histone modification,10,10,12,12,10,10
+PF01429,MBD,Methyl-CpG binding domain,DNA methylation,DNA methylation,Methylated DNA binding,8,7,12,12,6,6
+PF00096,zf-C2H2,"Zinc finger, C2H2 type",DNA binding,DNA binding,Other,600,15,27,11,600,15
+PF05033,Pre-SET,Pre-SET motif,Other,Other,Histone PTM writers,7,7,11,11,7,7
+PF02375,JmjN,jmjN domain,"Histone methylation, eraser",Histone methylation,Histone PTM erasers,10,10,9,9,10,10
+PF00569,ZZ,"Zinc finger, ZZ type",Other,Other,Histone PTM readers,4,4,9,9,4,4
+PF23011,PHD-1st_NSD,,"Histone methylation, reader",Histone methylation,Histone PTM writers,3,3,9,9,3,3
+PF01388,ARID,ARID/BRIGHT DNA binding domain,DNA binding,DNA binding,Histone PTM erasers,8,8,8,8,8,8
+PF22528,PRMT_C,,Dimerization/oligomerization,Dimerization/oligomerization,Histone PTM writers,8,8,8,8,8,8
+PF04433,SWIRM,SWIRM domain,DNA binding,DNA binding,Histone PTM erasers,6,6,8,8,6,6
+PF07533,BRK,BRK domain,Other,Other,Chromatin remodelers,5,5,8,8,5,5
+PF17982,C5HCH,NSD Cys-His rich domain,"Histone methylation, reader",Histone methylation,Histone PTM writers,3,3,8,8,3,3
+PF22908,NSD_PHD,,"Histone methylation, reader",Histone methylation,Histone PTM writers,3,3,8,8,3,3
+PF23004,PHDvar_NSD,,"Histone methylation, reader",Histone methylation,Histone PTM writers,3,3,8,8,3,3
+PF00145,DNA_methylase,C-5 cytosine-specific DNA methylase,DNA methylation,DNA methylation,DNA de_methylation,3,3,8,8,3,3
+PF13831,PHD_2,PHD-finger,"Histone methylation, reader",Histone methylation,Histone modification,8,8,7,7,8,8
+PF18104,Tudor_2,Jumonji domain-containing protein 2A Tudor domain,"Histone methylation, reader",Histone methylation,Histone PTM erasers,6,6,7,7,6,6
+PF17811,JHD,Jumonji helical domain,Other,Other,Histone PTM erasers,5,5,7,7,5,5
+PF13923,zf-C3HC4_2,"Zinc finger, C3HC4 type (RING finger)",Other,Other,Other,9,5,10,7,7,5
+PF07529,HSA,HSA domain,DNA binding,DNA binding,Chromatin remodelers,4,4,7,7,4,4
+PF07714,PK_Tyr_Ser-Thr,Protein tyrosine and serine/threonine kinase,"Histone phosphorylation, writer",Histone phosphorylation,Histone PTM writers,5,3,11,7,5,3
+PF00454,PI3_PI4_kinase,Phosphatidylinositol 3- and 4-kinase,"Histone phosphorylation, writer",Histone phosphorylation,Histone PTM writers,4,3,9,7,4,3
+PF02259,FAT,FAT domain,Other,Other,Histone PTM writers,4,3,9,7,4,3
+PF02260,FATC,FATC domain,Other,Other,Histone PTM writers,3,3,7,7,3,3
+PF06461,CHDII_SANT-like,"CHD subfamily II, SANT-like domain",Other,Other,Chromatin remodelers,3,3,7,7,3,3
+PF06465,DUF1087,"CHD subfamily II, DUF1087",Other,Other,Chromatin remodelers,3,3,7,7,3,3
+PF08073,CHDNT,CHDNT (NUC034) domain,Other,Other,Chromatin remodelers,3,3,7,7,3,3
+PF08074,CHDCT2,CHDCT2 (NUC038) domain,Other,Other,Chromatin remodelers,3,3,7,7,3,3
+PF00400,WD40,"WD domain, G-beta repeat",Histone binding,Histone binding,Other,65,10,41,6,65,10
+PF02928,zf-C5HC2,C5HC2 zinc finger,DNA binding,DNA binding,Histone PTM erasers,5,5,6,6,5,5
+PF05964,FYRN,F/Y-rich N-terminus,PPI,PPI,Histone PTM writers,5,4,6,6,5,4
+PF05965,FYRC,F/Y rich C-terminus,PPI,PPI,Histone PTM writers,5,4,6,6,5,4
+PF13771,zf-HC5HC2H,PHD-like zinc-binding domain,Other,Other,Histone PTM writers,5,4,7,6,4,4
+PF08429,PLU-1,PLU-1-like protein,Other,Other,Histone PTM erasers,4,4,6,6,4,4
+PF21323,KDM5_C-hel,,Other,Other,Histone PTM erasers,4,4,6,6,4,4
+PF00989,PAS,PAS fold,Other,Other,Other,18,3,10,6,15,3
+PF14598,PAS_11,PAS domain,Other,Other,Histone PTM writers,11,3,8,6,11,3
+PF21549,PRDM2_PR,,"Histone methylation, writer",Histone methylation,Histone modification,13,8,6,5,13,8
+PF10513,EPL1,Enhancer of polycomb-like,Other,Other,Histone modification,7,7,5,5,7,7
+PF00433,Pkinase_C,Protein kinase C terminal domain,"Histone phosphorylation, writer",Histone phosphorylation,Histone PTM writers,6,6,5,5,6,6
+PF01448,ELM2,ELM2 domain,Other,Other,Histone modification,7,6,6,5,7,6
+PF00076,RRM_1,"RNA recognition motif. (a.k.a. RRM, RBD, or RNP domain)",RNA binding,RNA binding,Other,78,5,35,5,78,5
+PF00320,GATA,GATA zinc finger,DNA binding,DNA binding,Other,13,5,7,5,5,5
+PF01853,MOZ_SAS,MOZ/SAS family,"Histone acetylation, writer",Histone acetylation,Histone PTM writers,5,5,5,5,5,5
+PF17772,zf-MYST,MYST family zinc finger domain,"Histone acetylation, writer",Histone acetylation,Histone PTM writers,5,5,5,5,5,5
+PF07496,zf-CW,CW-type Zinc Finger,DNA binding,DNA binding,Other,6,5,5,5,6,5
+PF15613,WSD,"Williams-Beuren syndrome DDT (WSD), D-TOX E motif",DNA binding,DNA binding,Histone PTM readers,4,4,5,5,4,4
+PF13181,TPR_8,Tetratricopeptide repeat,Other,Other,Other,9,3,10,5,3,3
+PF00130,C1_1,Phorbol esters/diacylglycerol binding domain (C1 domain),Other,Other,Histone PTM writers,3,3,5,5,3,3
+PF02791,DDT,DDT domain,DNA binding,DNA binding,Histone PTM readers,3,3,5,5,3,3
+PF21524,SAMD1_WH,,DNA binding,DNA binding,Histone PTM writers,3,3,5,5,3,3
+PF16866,PHD_4,PHD-finger,Other,Other,Histone PTM erasers,3,3,5,5,3,3
+PF00443,UCH,Ubiquitin carboxyl-terminal hydrolase,Other,Other,Other,14,7,9,4,9,6
+PF06325,PrmA,Ribosomal protein L11 methyltransferase (PrmA),"Histone methylation, writer",Histone methylation,Histone PTM writers,5,5,4,4,5,5
+PF01352,KRAB,KRAB box,DNA binding,DNA binding,Other,326,3,11,4,325,3
+PF17226,MTA_R1,MTA R1 domain,PPI,PPI,Chromatin remodelers,3,3,4,4,3,3
+PF21255,DNMT3_ADD_GATA1-like,,Histone binding,Histone binding,DNA de_methylation,3,3,4,4,3,3
+PF17980,ADD_DNMT3,Cysteine rich ADD domain in DNMT3,Histone binding,Histone binding,DNA de_methylation,3,3,4,4,3,3
+PF00850,Hist_deacetyl,Histone deacetylase domain,"Histone acetylation, eraser",Histone acetylation,Histone PTM erasers,11,11,3,3,11,11
+PF00046,Homeodomain,Homeodomain,DNA binding,DNA binding,Other,210,4,25,3,19,4
+PF21326,KDM6_GATAL,,Other,Other,Histone PTM erasers,3,3,3,3,3,3
+PF21322,KDM6_C-hel,,Other,Other,Histone PTM erasers,3,3,3,3,3,3
+PF02820,MBT,mbt repeat,"Histone methylation, reader",Histone methylation,Histone PTM readers,3,3,3,3,3,3
+PF22987,KDM3B_Tudor,,"Histone methylation, reader",Histone methylation,Histone PTM erasers,3,3,3,3,3,3
+PF22988,PWWP_KDM3B,,"Histone methylation, reader",Histone methylation,Histone PTM erasers,3,3,3,3,3,3
+PF22989,DUF7030,,Other,Other,Histone PTM erasers,3,3,3,3,3,3
+PF11717,Tudor-knot,RNA binding activity-knot of a chromodomain,RNA binding,RNA binding,Histone PTM writers,3,3,3,3,3,3
+PF14048,MBD_C,C-terminal domain of methyl-CpG binding protein 2 and 3,DNA methylation,DNA methylation,Methylated DNA binding,8,8,2,2,8,8
+PF16564,MBDa,p55-binding region of Methyl-CpG-binding domain proteins MBD,PPI,PPI,Methylated DNA binding,8,8,2,2,8,8
+PF02148,zf-UBP,Zn-finger in ubiquitin-hydrolases and other protein,Other,Other,Histone PTM erasers,8,6,2,2,8,6
+PF00651,BTB,BTB/POZ domain,Dimerization/oligomerization,Dimerization/oligomerization,Methylated DNA binding,52,4,10,2,39,3
+PF17035,BET,Bromodomain extra-terminal - transcription regulation,Other,Other,Histone PTM readers,4,4,2,2,4,4
+PF16207,RAWUL,RAWUL domain RING finger- and  WD40-associated ubiquitin-like,Other,Other,Other,6,4,2,2,6,4
+PF14061,Mtf2_C,Polycomb-like MTF2 factor 2,Other,Other,Histone PTM readers,3,3,2,2,3,3
+PF02513,Spin-Ssty,Spin/Ssty Family,Other,Other,Histone PTM readers,5,5,1,1,5,5
+PF00378,ECH_1,Enoyl-CoA hydratase/isomerase,Other,Other,Histone PTM writers,4,4,1,1,4,4
+PF01753,zf-MYND,MYND finger,Other,Other,Histone PTM writers,4,3,2,1,3,3
+PF01393,Chromo_shadow,Chromo shadow domain,Dimerization/oligomerization,Dimerization/oligomerization,Histone PTM readers,3,3,1,1,3,3
+PF12203,HDAC4_Gln,Glutamine rich N terminal domain of histone deacetylase 4,Other,Other,Histone PTM erasers,3,3,1,1,3,3
+PF14051,DPF1-3_N,"DPF1-3, N-terminal",Other,Other,Chromatin remodelers,3,3,1,1,3,3

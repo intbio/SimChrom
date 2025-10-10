@@ -1,0 +1,15 @@
+"# Supplementary Table ST2. The evaluation metrics for all localized, nuclear and subnuclear (nucleolus, nuclear envelope, nuclear bodies, nucleoplasm) proteins from UniProt (A) and HPA (B). ",,,,,,,,,,
+,UniProt (A),HPA (B),"True Positive
+(A and B)",Union (A or B),Jaccard similarity coefficient,"False Positive
+(B, not A)","False Negative
+(A, not B)","Precision
+TP / 
+(TP + FP)","Recall
+TP / 
+(TP + FN)",F1-score
+All localized proteins,14147,12172,8981,17340,0.52,3191,5168,0.74,0.63,0.68
+Nucleus,4717,6500,3288,7932,0.41,3212,1432,0.51,0.7,0.59
+Nucleolus,373,1191,185,1380,0.13,1006,189,0.16,0.49,0.24
+Nuclear envelope,209,251,46,414,0.11,205,163,0.18,0.22,0.2
+Nuclear bodies,245,960,87,1118,0.08,873,158,0.09,0.36,0.14
+Nucleoplasm,170,5423,122,5471,0.02,5301,48,0.02,0.72,0.04
