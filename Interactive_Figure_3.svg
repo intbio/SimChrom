@@ -4095,12 +4095,13 @@
      style="fill:none;stroke:#d3d3d3;stroke-width:0.999998;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
      id="architectural"
      class="svgcheckbox"
-     width="188.99905"
+     width="188.99963"
      height="24"
      rx="8"
      ry="8"
-     x="364.50018"
-     y="618" />
+     x="365.30316"
+     y="617"
+     parents="chromatin_nucleosol" />
   <rect
      style="fill:none;stroke:#d3d3d3;stroke-width:0.999998;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
      id="smc_complexes"
