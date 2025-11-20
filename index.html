@@ -617,6 +617,7 @@
           
         columns: [
             { title: "Domain annotated in InterPro (YES/NO)", data: "Annotated in InterPro" },
+            { title: "Gene", data: "Gene",visible: true },
             { title: "Entry", data: "Entry" },
             { title: "TED", data: "TED" },
             { title: "TED range", data: "ted_range",visible: true  },
@@ -633,12 +634,13 @@
             { title: "SimChrom-SL", data: "SimChrom-SL",visible: true },
             { title: "InterPro_link", data: "InterPro_link",visible: false },
             { title: "TED_link", data: "TED_link",visible: false },
-            { title: "TED ID", data: "ted_id",visible: true }
+            { title: "TED ID", data: "ted_id",visible: true },
+            
       
            
         ],
         columnDefs: [
-            { targets: [4,6,7,9,11,12,13], type: "num" },
+            { targets: [5,7,8,10,12,13,14], type: "num" },
             
         {
             targets: 0,
@@ -654,7 +656,33 @@
             }
         },
         {
+            targets: 1,
+            render: function (data, type, row, meta)
+            {
+                if (type === 'display')
+                {
+                        // console.log(row)
+                        data = "<a target='_blank' href='https://www.genecards.org/cgi-bin/carddisp.pl?gene="+data+"'>"+data+"</a>";
+
+                }
+                return data;
+            }
+        },
+        {
             targets: 2,
+            render: function (data, type, row, meta)
+            {
+                if (type === 'display')
+                {
+                        // console.log(row)
+                        data = "<a target='_blank' href='https://www.ebi.ac.uk/interpro/protein/reviewed/"+data+"'>"+data+"</a>";
+
+                }
+                return data;
+            }
+        },
+        {
+            targets: 3,
             render: function (data, type, row, meta)
             {
                 if (type === 'display')
@@ -669,7 +697,7 @@
             
            
         {
-            targets: 5,
+            targets: 6,
             type: "num",
             render: function (data, type, row, meta)
             {
@@ -678,9 +706,9 @@
 
                         if (Number(data)>=70){
                             // result = result + '<a target="_blank" href="https://www.genecards.org/cgi-bin/carddisp.pl?gene=' + gene + '">'+ gene +'</a>,<br>';
-                            data = "<a style='color:green;font-weight:bold' title='HPA location evidence: Approved'>"+data+"</a>";
+                            data = "<a style='color:green;font-weight:bold'>"+data+"</a>";
                         } else {
-                            data = "<a style='color:orange;font-weight:bold' title='HPA location evidence: Approved'>"+data+"</a>";
+                            data = "<a style='color:orange;font-weight:bold'>"+data+"</a>";
                         }
                     return data;
                 }
@@ -688,7 +716,7 @@
             }
         },
         {
-            targets: 8,
+            targets: 9,
             
             render: function (data, type, row, meta)
             {
@@ -698,9 +726,9 @@
 
                         if (data == 'high'){
                             // result = result + '<a target="_blank" href="https://www.genecards.org/cgi-bin/carddisp.pl?gene=' + gene + '">'+ gene +'</a>,<br>';
-                            data = "<a style='color:green;font-weight:bold' title='HPA location evidence: Approved'>"+data+"</a>";
+                            data = "<a style='color:green;font-weight:bold'>"+data+"</a>";
                         } else {
-                            data = "<a style='color:orange;font-weight:bold' title='HPA location evidence: Approved'>"+data+"</a>";
+                            data = "<a style='color:orange;font-weight:bold'>"+data+"</a>";
                         }
 
                 }
@@ -708,7 +736,7 @@
             }
         },
         {
-            targets: 10,
+            targets: 11,
             type: "num",
             render: function (data, type, row, meta)
             {
