@@ -618,7 +618,7 @@
         columns: [
             { title: "Domain annotated in InterPro (YES/NO)", data: "Annotated in InterPro" },
             { title: "Gene", data: "Gene",visible: true },
-            { title: "Entry", data: "Entry" },
+            { title: "Protein", data: "Entry" },
             { title: "TED", data: "TED" },
             { title: "TED range", data: "ted_range",visible: true  },
             { title: "TED len", data: "ted_len" },
@@ -675,7 +675,7 @@
                 if (type === 'display')
                 {
                         // console.log(row)
-                        data = "<a target='_blank' href='https://www.ebi.ac.uk/interpro/protein/reviewed/"+data+"'>"+data+"</a>";
+                        data = "<a target='_blank' href='https://www.uniprot.org/uniprotkb/"+data+"'>"+data+"</a>";
 
                 }
                 return data;
