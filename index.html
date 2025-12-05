@@ -82,7 +82,7 @@
               <br> <br> 
               The resource provides interactive tools to analyze human nuclear and chromatin proteins with respect to their subnuclear localization (based on data from <a href="https://www.uniprot.org">UniProt</a>, <a href="https://www.proteinatlas.org">HPA</a>, <a href="https://opencell.sf.czbiohub.org">OpenCell</a>), chromatin category according to the developed simplified chromatin protein classification (SimChrom), protein abundance (from  <a href="https://pax-db.org/">PaxDb</a>), and domain architecture and composition (based on <a href="http://pfam.xfam.org/">Pfam</a> and predicted in <a href="https://ted.cathdb.info/">TED</a>). Preprocessed MS-based chromatome datasets and reference sets of nuclear and non-nuclear proteins are also available for download.
               <br> <br> 
-              <b>Interactive Figure 1. Overview of nuclear structure and composition.</b> 
+              <b>Interactive Plot 1. Overview of nuclear structure and composition.</b> 
               <br> <br> 
               <div class="d-flex justify-content-left" style="max-width: 600px;">
                   <object id="landing" data="Interactive_Figure_1.svg" height="600px"></object>
@@ -92,14 +92,14 @@
         
       <div class="tab-pane  " id="LocalizationTab" role="tabpanel" aria-labelledby="fig1-tab">
           <div class="my-3 text-start" style="max-width: 900px;">
-              <b>Interactive Figure 2. Comparative analysis of protein localization ontologies and their content between UniProt, the Human Protein Atlas (HPA) and OpenCell.</b> 
+              <b>Interactive Plot 2. Comparative analysis of protein localization ontologies and their content between UniProt, the Human Protein Atlas (HPA) and OpenCell.</b> 
               <br>Clicking the checkboxes of individual localization terms selects the list of proteins shown in the table below. When several checkboxes are selected the boolean logic operation selected by the toggle above applies.
           </div>
           <object id="fig1" data="Interactive_Figure_2.svg" height="600px"></object>
       </div>
       <div class="tab-pane  " id="SimChromTab" role="tabpanel" aria-labelledby="fig2-tab">
               <div class="my-3 text-start" style="max-width: 900px;">
-               <b>Interactive Figure 3. The SimChrom chromatin proteins set and its classification according to the SimChrom ontology.</b>
+               <b>Interactive Plot 3. The SimChrom chromatin proteins set and its classification according to the SimChrom ontology.</b>
                   <p style="text-align: justify;">
                Clicking the categories selects them for display in the list of proteins in the table below. When several categories are selected the boolean logic operation selected by the toggle above applies. Numbers of classifed proteins are displayed next to each category.
                   </p>
@@ -119,7 +119,7 @@
         
       <div class="tab-pane  " id="SHvsPFAMTab" role="tabpanel" aria-labelledby="SHvsPFAMTab-tab">
                <div class="my-3 text-start" style="max-width: 900px;"> 
-               <b>Interactive Figure 4. The most representative protein domains/families (according to Pfam) in different categories of chromatin proteins. </b>  
+               <b>Interactive Plot 4. The most representative protein domains/families (according to Pfam) in different categories of chromatin proteins. </b>  
                  <br>The classification system (standard or single label) and the threshold for the data point display are selected below.                 
               </div>
 <!--SH VS PFAM ################################################################################# -->
@@ -131,7 +131,7 @@
           
       <div class="tab-pane  " id="PFAMvsPFAMTab" role="tabpanel" aria-labelledby="PFAMvsPFAMTab-tab">
               <div class="my-3 text-start" style="max-width: 970px">
-               <b>Interactive Figure 5. Co-occurence of Pfam protein domains in chromatin/epigenetic regulator proteins. </b> 
+               <b>Interactive Plot 5. Co-occurence of Pfam protein domains in chromatin/epigenetic regulator proteins. </b> 
                   <p style="text-align: justify;">
                   From the list of Pfam domain type pairs that were found in at least three chromatin regulator protein, domains involved in various histone post-translational modifications, chromatin remodeling, histone binding, DNA binding and protein dimerization/oligomerization were manually selected and grouped into the respective categories based on the information currently available in the literature. The conditional probability of finding a corresponding domain A in a chromatin protein given that another domain B is already present was estimated and is presented below (columns and rows correspond to domains A and B, respectively). The number of proteins with the corresponding domain pair is given for all SimChrom proteins. Clicking on individual squares selects the respective proteins for the display in the table below.
                   </p>  
