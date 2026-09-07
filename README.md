@@ -2,7 +2,8 @@
 
 The resource provides interactive tools to analyze human nuclear and chromatin proteins with respect to their subnuclear localization (based on data from [UniProt](https://www.uniprot.org), [HPA](https://www.proteinatlas.org), [OpenCell](https://opencell.sf.czbiohub.org)), chromatin category according to the developed simplified chromatin protein classification (SimChrom), protein abundance (from [PaxDb](https://pax-db.org)), and domain architecture and composition (based on [Pfam](http://pfam.xfam.org) and predicted in [TED](https://ted.cathdb.info)). Preprocessed MS-based chromatome datasets and reference sets of nuclear and non-nuclear proteins are also available for download.
 
-SimChrom is a supplementary resource to the paper "(Re)defining the human chromatome: an integrated meta-analysis of localization, function, abundance, physical properties and domain composition of chromatin proteins" by Anna K. Gribkova, Grigoriy A. Armeev, Mikhail P. Kirpichnikov, and Alexey K. Shaytan. Correspondence can be addressed to shaytan_ak@mail.bio.msu.ru  
+SimChrom is based on the work described in: Gribkova et al., <i>Nucleic Acids Research</i> (2026), <a href="https://doi.org/10.1093/nar/gkaf1489">doi:10.1093/nar/gkaf1489</a>.  
+Correspondence can be addressed to 	shaytanak@my.msu.ru.    
 
 https://simchrom.intbio.org/  - main page 
 
