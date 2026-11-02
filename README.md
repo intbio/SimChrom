@@ -17,4 +17,4 @@ https://simchrom.intbio.org/#novel_structural_domains - Novel 3D structural doma
 
 https://simchrom.intbio.org/#domain_composition  - Analysis of Pfam domain composition
 
-https://simchrom.intbio.org/#domain_co-occurrence - Analysis of Pfam domain co-occurence
+https://simchrom.intbio.org/#domain_co-occurrence - Analysis of Pfam domain co-occurrence
